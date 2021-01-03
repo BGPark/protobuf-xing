@@ -8,26 +8,26 @@ message  B7__InBlock {
 
 message  B7__OutBlock {
     string hotime = 1; // 호가시간
-    sint32 lp_offerho1 = 2; // LP매도호가수량1
-    sint32 lp_bidho1 = 3; // LP매수호가수량1
-    sint32 lp_offerho2 = 4; // LP매도호가수량2
-    sint32 lp_bidho2 = 5; // LP매수호가수량2
-    sint32 lp_offerho3 = 6; // LP매도호가수량3
-    sint32 lp_bidho3 = 7; // LP매수호가수량3
-    sint32 lp_offerho4 = 8; // LP매도호가수량4
-    sint32 lp_bidho4 = 9; // LP매수호가수량4
-    sint32 lp_offerho5 = 10; // LP매도호가수량5
-    sint32 lp_bidho5 = 11; // LP매수호가수량5
-    sint32 lp_offerho6 = 12; // LP매도호가수량6
-    sint32 lp_bidho6 = 13; // LP매수호가수량6
-    sint32 lp_offerho7 = 14; // LP매도호가수량7
-    sint32 lp_bidho7 = 15; // LP매수호가수량7
-    sint32 lp_offerho8 = 16; // LP매도호가수량8
-    sint32 lp_bidho8 = 17; // LP매수호가수량8
-    sint32 lp_offerho9 = 18; // LP매도호가수량9
-    sint32 lp_bidho9 = 19; // LP매수호가수량9
-    sint32 lp_offerho10 = 20; // LP매도호가수량10
-    sint32 lp_bidho10 = 21; // LP매수호가수량10
+    sint32 lp9offerho1 = 2; // LP매도호가수량1
+    sint32 lp9bidho1 = 3; // LP매수호가수량1
+    sint32 lp9offerho2 = 4; // LP매도호가수량2
+    sint32 lp9bidho2 = 5; // LP매수호가수량2
+    sint32 lp9offerho3 = 6; // LP매도호가수량3
+    sint32 lp9bidho3 = 7; // LP매수호가수량3
+    sint32 lp9offerho4 = 8; // LP매도호가수량4
+    sint32 lp9bidho4 = 9; // LP매수호가수량4
+    sint32 lp9offerho5 = 10; // LP매도호가수량5
+    sint32 lp9bidho5 = 11; // LP매수호가수량5
+    sint32 lp9offerho6 = 12; // LP매도호가수량6
+    sint32 lp9bidho6 = 13; // LP매수호가수량6
+    sint32 lp9offerho7 = 14; // LP매도호가수량7
+    sint32 lp9bidho7 = 15; // LP매수호가수량7
+    sint32 lp9offerho8 = 16; // LP매도호가수량8
+    sint32 lp9bidho8 = 17; // LP매수호가수량8
+    sint32 lp9offerho9 = 18; // LP매도호가수량9
+    sint32 lp9bidho9 = 19; // LP매수호가수량9
+    sint32 lp9offerho10 = 20; // LP매도호가수량10
+    sint32 lp9bidho10 = 21; // LP매수호가수량10
     string shcode = 22; // 단축코드
     sint32 offerho1 = 23; // 매도호가1
     sint32 bidho1 = 24; // 매수호가1
@@ -72,7 +72,7 @@ message  B7__OutBlock {
     sint32 totofferrem = 63; // 총매도호가잔량
     sint32 totbidrem = 64; // 총매수호가잔량
     string donsigubun = 65; // 동시호가구분
-    string alloc_gubun = 66; // 배분적용구분
+    string alloc9gubun = 66; // 배분적용구분
 }
 
 // BMT  시간대별투자자매매추이(BMT)
@@ -180,11 +180,11 @@ message  BM__OutBlock {
     sint32 msvolume = 3; // 매수 거래량
     sint32 mdvolume = 4; // 매도 거래량
     sint32 msvol = 5; // 거래량 순매수
-    sint32 p_msvol = 6; // 거래량 순매수 직전대비
+    sint32 p9msvol = 6; // 거래량 순매수 직전대비
     sint32 msvalue = 7; // 매수 거래대금
     sint32 mdvalue = 8; // 매도 거래대금
     sint32 msval = 9; // 거래대금 순매수
-    sint32 p_msval = 10; // 거래대금 순매수 직전대비
+    sint32 p9msval = 10; // 거래대금 순매수 직전대비
     string upcode = 11; // 업종코드
 }
 
@@ -218,9 +218,9 @@ message  C01_OutBlock {
     string sihogagb = 23; // 시장조성호가구분
     string jakino = 24; // 위탁사번호
     string daeyong = 25; // 대용주권계좌번호
-    string mem_filler = 26; // mem_filler
-    string mem_accno = 27; // mem_accno
-    string mem_filler1 = 28; // mem_filler1
+    string mem9filler = 26; // mem_filler
+    string mem9accno = 27; // mem_accno
+    string mem9filler1 = 28; // mem_filler1
 }
 
 //CCEAQ01100 선물옵션 CME 매매거래현황
@@ -511,9 +511,9 @@ message  CD0_InBlock {
 
 message  CD0_OutBlock {
     string gubun = 1; // 접속매매여부
-    string dy_gubun = 2; // 실시간가격제한여부
-    float dy_uplmtprice = 3; // 실시간상한가
-    float dy_dnlmtprice = 4; // 실시간하한가
+    string dy9gubun = 2; // 실시간가격제한여부
+    float dy9uplmtprice = 3; // 실시간상한가
+    float dy9dnlmtprice = 4; // 실시간하한가
     string futcode = 5; // 단축코드
 }
 
@@ -1636,8 +1636,8 @@ message CHARTEXCEL_ChartExcelInBlock {
 
 message CHARTEXCEL_ChartExcelOutBlock {
     sint64 indexid = 1; // 지표ID
-    sint32 rec_cnt = 2; // 레코드갯수
-    sint32 validdata_cnt = 3; // 유효 데이터 컬럼 갯수
+    sint32 rec9cnt = 2; // 레코드갯수
+    sint32 validdata9cnt = 3; // 유효 데이터 컬럼 갯수
 }
 
 message CHARTEXCEL_ChartExcelOutBlock1 {
@@ -1675,8 +1675,8 @@ message CHARTINDEX_ChartIndexInBlock {
 
 message CHARTINDEX_ChartIndexOutBlock {
     sint64 indexid = 1; // 지표ID
-    sint32 rec_cnt = 2; // 레코드갯수
-    sint32 validdata_cnt = 3; // 유효 데이터 컬럼 갯수
+    sint32 rec9cnt = 2; // 레코드갯수
+    sint32 validdata9cnt = 3; // 유효 데이터 컬럼 갯수
 }
 
 message CHARTINDEX_ChartIndexOutBlock1 {
@@ -1857,16 +1857,16 @@ message  CM0_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // CM1  CME체결
@@ -1983,16 +1983,16 @@ message  CM1_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // CM2  CME확인
@@ -2109,16 +2109,16 @@ message  CM2_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 //CSPAQ00600 계좌별신용한도조회
@@ -2774,48 +2774,48 @@ message  DH1_InBlock {
 }
 
 message  DH1_OutBlock {
-    string dan_hotime = 1; // 시간외단일가호가시간
-    string dan_hstatus = 2; // 시간외단일가장구분
-    sint32 dan_offerho1 = 3; // 시간외단일가매도호가1
-    sint32 dan_bidho1 = 4; // 시간외단일가매수호가1
-    sint64 dan_offerrem1 = 5; // 시간외단일가매도호가잔량1
-    sint64 dan_bidrem1 = 6; // 시간외단일가매수호가잔량1
-    sint64 dan_preoffercha1 = 7; // 시간외단일가직전매도대비수량1
-    sint64 dan_prebidcha1 = 8; // 시간외단일가직전매수대비수량1
-    sint32 dan_offerho2 = 9; // 시간외단일가매도호가2
-    sint32 dan_bidho2 = 10; // 시간외단일가매수호가2
-    sint64 dan_offerrem2 = 11; // 시간외단일가매도호가잔량2
-    sint64 dan_bidrem2 = 12; // 시간외단일가매수호가잔량2
-    sint64 dan_preoffercha2 = 13; // 시간외단일가직전매도대비수량2
-    sint64 dan_prebidcha2 = 14; // 시간외단일가직전매수대비수량2
-    sint32 dan_offerho3 = 15; // 시간외단일가매도호가3
-    sint32 dan_bidho3 = 16; // 시간외단일가매수호가3
-    sint64 dan_offerrem3 = 17; // 시간외단일가매도호가잔량3
-    sint64 dan_bidrem3 = 18; // 시간외단일가매수호가잔량3
-    sint64 dan_preoffercha3 = 19; // 시간외단일가직전매도대비수량3
-    sint64 dan_prebidcha3 = 20; // 시간외단일가직전매수대비수량3
-    sint32 dan_offerho4 = 21; // 시간외단일가매도호가4
-    sint32 dan_bidho4 = 22; // 시간외단일가매수호가4
-    sint64 dan_offerrem4 = 23; // 시간외단일가매도호가잔량4
-    sint64 dan_bidrem4 = 24; // 시간외단일가매수호가잔량4
-    sint64 dan_preoffercha4 = 25; // 시간외단일가직전매도대비수량4
-    sint64 dan_prebidcha4 = 26; // 시간외단일가직전매수대비수량4
-    sint32 dan_offerho5 = 27; // 시간외단일가매도호가5
-    sint32 dan_bidho5 = 28; // 시간외단일가매수호가5
-    sint64 dan_offerrem5 = 29; // 시간외단일가매도호가잔량5
-    sint64 dan_bidrem5 = 30; // 시간외단일가매수호가잔량5
-    sint64 dan_preoffercha5 = 31; // 시간외단일가직전매도대비수량5
-    sint64 dan_prebidcha5 = 32; // 시간외단일가직전매수대비수량5
-    sint64 dan_totofferrem = 33; // 시간외단일가총매도호가잔량
-    sint64 dan_totbidrem = 34; // 시간외단일가총매수호가잔량
-    sint64 dan_preoffercha = 35; // 시간외단일가직전매도호가총대비수량
-    sint64 dan_prebidcha = 36; // 시간외단일가직전매수호가총대비수량
-    sint32 dan_yeprice = 37; // 시간외단일가예상체결가격
-    sint64 dan_yevolume = 38; // 시간외단일가예상체결수량
-    string dan_preysign = 39; // 시간외단일가예상가직전가대비구분
-    sint32 dan_preychange = 40; // 시간외단일가예상가직전가대비
-    string dan_jnilysign = 41; // 시간외단일가예상가전일가대비구분
-    sint32 dan_jnilychange = 42; // 시간외단일가예상가전일가대비
+    string dan9hotime = 1; // 시간외단일가호가시간
+    string dan9hstatus = 2; // 시간외단일가장구분
+    sint32 dan9offerho1 = 3; // 시간외단일가매도호가1
+    sint32 dan9bidho1 = 4; // 시간외단일가매수호가1
+    sint64 dan9offerrem1 = 5; // 시간외단일가매도호가잔량1
+    sint64 dan9bidrem1 = 6; // 시간외단일가매수호가잔량1
+    sint64 dan9preoffercha1 = 7; // 시간외단일가직전매도대비수량1
+    sint64 dan9prebidcha1 = 8; // 시간외단일가직전매수대비수량1
+    sint32 dan9offerho2 = 9; // 시간외단일가매도호가2
+    sint32 dan9bidho2 = 10; // 시간외단일가매수호가2
+    sint64 dan9offerrem2 = 11; // 시간외단일가매도호가잔량2
+    sint64 dan9bidrem2 = 12; // 시간외단일가매수호가잔량2
+    sint64 dan9preoffercha2 = 13; // 시간외단일가직전매도대비수량2
+    sint64 dan9prebidcha2 = 14; // 시간외단일가직전매수대비수량2
+    sint32 dan9offerho3 = 15; // 시간외단일가매도호가3
+    sint32 dan9bidho3 = 16; // 시간외단일가매수호가3
+    sint64 dan9offerrem3 = 17; // 시간외단일가매도호가잔량3
+    sint64 dan9bidrem3 = 18; // 시간외단일가매수호가잔량3
+    sint64 dan9preoffercha3 = 19; // 시간외단일가직전매도대비수량3
+    sint64 dan9prebidcha3 = 20; // 시간외단일가직전매수대비수량3
+    sint32 dan9offerho4 = 21; // 시간외단일가매도호가4
+    sint32 dan9bidho4 = 22; // 시간외단일가매수호가4
+    sint64 dan9offerrem4 = 23; // 시간외단일가매도호가잔량4
+    sint64 dan9bidrem4 = 24; // 시간외단일가매수호가잔량4
+    sint64 dan9preoffercha4 = 25; // 시간외단일가직전매도대비수량4
+    sint64 dan9prebidcha4 = 26; // 시간외단일가직전매수대비수량4
+    sint32 dan9offerho5 = 27; // 시간외단일가매도호가5
+    sint32 dan9bidho5 = 28; // 시간외단일가매수호가5
+    sint64 dan9offerrem5 = 29; // 시간외단일가매도호가잔량5
+    sint64 dan9bidrem5 = 30; // 시간외단일가매수호가잔량5
+    sint64 dan9preoffercha5 = 31; // 시간외단일가직전매도대비수량5
+    sint64 dan9prebidcha5 = 32; // 시간외단일가직전매수대비수량5
+    sint64 dan9totofferrem = 33; // 시간외단일가총매도호가잔량
+    sint64 dan9totbidrem = 34; // 시간외단일가총매수호가잔량
+    sint64 dan9preoffercha = 35; // 시간외단일가직전매도호가총대비수량
+    sint64 dan9prebidcha = 36; // 시간외단일가직전매수호가총대비수량
+    sint32 dan9yeprice = 37; // 시간외단일가예상체결가격
+    sint64 dan9yevolume = 38; // 시간외단일가예상체결수량
+    string dan9preysign = 39; // 시간외단일가예상가직전가대비구분
+    sint32 dan9preychange = 40; // 시간외단일가예상가직전가대비
+    string dan9jnilysign = 41; // 시간외단일가예상가전일가대비구분
+    sint32 dan9jnilychange = 42; // 시간외단일가예상가전일가대비
     string shcode = 43; // 단축코드
 }
 
@@ -2825,48 +2825,48 @@ message  DHA_InBlock {
 }
 
 message  DHA_OutBlock {
-    string dan_hotime = 1; // 시간외단일가호가시간
-    string dan_hstatus = 2; // 시간외단일가장구분
-    sint32 dan_offerho1 = 3; // 시간외단일가매도호가1
-    sint32 dan_bidho1 = 4; // 시간외단일가매수호가1
-    sint64 dan_offerrem1 = 5; // 시간외단일가매도호가잔량1
-    sint64 dan_bidrem1 = 6; // 시간외단일가매수호가잔량1
-    sint64 dan_preoffercha1 = 7; // 시간외단일가직전매도대비수량1
-    sint64 dan_prebidcha1 = 8; // 시간외단일가직전매수대비수량1
-    sint32 dan_offerho2 = 9; // 시간외단일가매도호가2
-    sint32 dan_bidho2 = 10; // 시간외단일가매수호가2
-    sint64 dan_offerrem2 = 11; // 시간외단일가매도호가잔량2
-    sint64 dan_bidrem2 = 12; // 시간외단일가매수호가잔량2
-    sint64 dan_preoffercha2 = 13; // 시간외단일가직전매도대비수량2
-    sint64 dan_prebidcha2 = 14; // 시간외단일가직전매수대비수량2
-    sint32 dan_offerho3 = 15; // 시간외단일가매도호가3
-    sint32 dan_bidho3 = 16; // 시간외단일가매수호가3
-    sint64 dan_offerrem3 = 17; // 시간외단일가매도호가잔량3
-    sint64 dan_bidrem3 = 18; // 시간외단일가매수호가잔량3
-    sint64 dan_preoffercha3 = 19; // 시간외단일가직전매도대비수량3
-    sint64 dan_prebidcha3 = 20; // 시간외단일가직전매수대비수량3
-    sint32 dan_offerho4 = 21; // 시간외단일가매도호가4
-    sint32 dan_bidho4 = 22; // 시간외단일가매수호가4
-    sint64 dan_offerrem4 = 23; // 시간외단일가매도호가잔량4
-    sint64 dan_bidrem4 = 24; // 시간외단일가매수호가잔량4
-    sint64 dan_preoffercha4 = 25; // 시간외단일가직전매도대비수량4
-    sint64 dan_prebidcha4 = 26; // 시간외단일가직전매수대비수량4
-    sint32 dan_offerho5 = 27; // 시간외단일가매도호가5
-    sint32 dan_bidho5 = 28; // 시간외단일가매수호가5
-    sint64 dan_offerrem5 = 29; // 시간외단일가매도호가잔량5
-    sint64 dan_bidrem5 = 30; // 시간외단일가매수호가잔량5
-    sint64 dan_preoffercha5 = 31; // 시간외단일가직전매도대비수량5
-    sint64 dan_prebidcha5 = 32; // 시간외단일가직전매수대비수량5
-    sint64 dan_totofferrem = 33; // 시간외단일가총매도호가잔량
-    sint64 dan_totbidrem = 34; // 시간외단일가총매수호가잔량
-    sint64 dan_preoffercha = 35; // 시간외단일가직전매도호가총대비수량
-    sint64 dan_prebidcha = 36; // 시간외단일가직전매수호가총대비수량
-    sint32 dan_yeprice = 37; // 시간외단일가예상체결가격
-    sint64 dan_yevolume = 38; // 시간외단일가예상체결수량
-    string dan_preysign = 39; // 시간외단일가예상가직전가대비구분
-    sint32 dan_preychange = 40; // 시간외단일가예상가직전가대비
-    string dan_jnilysign = 41; // 시간외단일가예상가전일가대비구분
-    sint32 dan_jnilychange = 42; // 시간외단일가예상가전일가대비
+    string dan9hotime = 1; // 시간외단일가호가시간
+    string dan9hstatus = 2; // 시간외단일가장구분
+    sint32 dan9offerho1 = 3; // 시간외단일가매도호가1
+    sint32 dan9bidho1 = 4; // 시간외단일가매수호가1
+    sint64 dan9offerrem1 = 5; // 시간외단일가매도호가잔량1
+    sint64 dan9bidrem1 = 6; // 시간외단일가매수호가잔량1
+    sint64 dan9preoffercha1 = 7; // 시간외단일가직전매도대비수량1
+    sint64 dan9prebidcha1 = 8; // 시간외단일가직전매수대비수량1
+    sint32 dan9offerho2 = 9; // 시간외단일가매도호가2
+    sint32 dan9bidho2 = 10; // 시간외단일가매수호가2
+    sint64 dan9offerrem2 = 11; // 시간외단일가매도호가잔량2
+    sint64 dan9bidrem2 = 12; // 시간외단일가매수호가잔량2
+    sint64 dan9preoffercha2 = 13; // 시간외단일가직전매도대비수량2
+    sint64 dan9prebidcha2 = 14; // 시간외단일가직전매수대비수량2
+    sint32 dan9offerho3 = 15; // 시간외단일가매도호가3
+    sint32 dan9bidho3 = 16; // 시간외단일가매수호가3
+    sint64 dan9offerrem3 = 17; // 시간외단일가매도호가잔량3
+    sint64 dan9bidrem3 = 18; // 시간외단일가매수호가잔량3
+    sint64 dan9preoffercha3 = 19; // 시간외단일가직전매도대비수량3
+    sint64 dan9prebidcha3 = 20; // 시간외단일가직전매수대비수량3
+    sint32 dan9offerho4 = 21; // 시간외단일가매도호가4
+    sint32 dan9bidho4 = 22; // 시간외단일가매수호가4
+    sint64 dan9offerrem4 = 23; // 시간외단일가매도호가잔량4
+    sint64 dan9bidrem4 = 24; // 시간외단일가매수호가잔량4
+    sint64 dan9preoffercha4 = 25; // 시간외단일가직전매도대비수량4
+    sint64 dan9prebidcha4 = 26; // 시간외단일가직전매수대비수량4
+    sint32 dan9offerho5 = 27; // 시간외단일가매도호가5
+    sint32 dan9bidho5 = 28; // 시간외단일가매수호가5
+    sint64 dan9offerrem5 = 29; // 시간외단일가매도호가잔량5
+    sint64 dan9bidrem5 = 30; // 시간외단일가매수호가잔량5
+    sint64 dan9preoffercha5 = 31; // 시간외단일가직전매도대비수량5
+    sint64 dan9prebidcha5 = 32; // 시간외단일가직전매수대비수량5
+    sint64 dan9totofferrem = 33; // 시간외단일가총매도호가잔량
+    sint64 dan9totbidrem = 34; // 시간외단일가총매수호가잔량
+    sint64 dan9preoffercha = 35; // 시간외단일가직전매도호가총대비수량
+    sint64 dan9prebidcha = 36; // 시간외단일가직전매수호가총대비수량
+    sint32 dan9yeprice = 37; // 시간외단일가예상체결가격
+    sint64 dan9yevolume = 38; // 시간외단일가예상체결수량
+    string dan9preysign = 39; // 시간외단일가예상가직전가대비구분
+    sint32 dan9preychange = 40; // 시간외단일가예상가직전가대비
+    string dan9jnilysign = 41; // 시간외단일가예상가전일가대비구분
+    sint32 dan9jnilychange = 42; // 시간외단일가예상가전일가대비
     string shcode = 43; // 단축코드
 }
 
@@ -2876,29 +2876,29 @@ message  DK3_InBlock {
 }
 
 message  DK3_OutBlock {
-    string dan_chetime = 1; // 시간외단일가체결시간
-    string dan_sign = 2; // 시간외단일가전일대비구분
-    sint32 dan_change = 3; // 시간외단일가전일대비
-    float dan_drate = 4; // 시간외단일가등락율
-    sint32 dan_price = 5; // 시간외단일가현재가
-    string dan_opentime = 6; // 시간외단일가시가시간
-    sint32 dan_open = 7; // 시간외단일가시가
-    string dan_hightime = 8; // 시간외단일가고가시간
-    sint32 dan_high = 9; // 시간외단일가고가
-    string dan_lowtime = 10; // 시간외단일가저가시간
-    sint32 dan_low = 11; // 시간외단일가저가
-    string dan_cgubun = 12; // 시간외단일가체결구분
-    sint32 dan_cvolume = 13; // 시간외단일가체결량
-    sint64 dan_volume = 14; // 시간외단일가누적거래량
-    sint64 dan_value = 15; // 시간외단일가누적거래대금
-    sint64 dan_mdvolume = 16; // 시간외단일가매도누적체결량
-    sint32 dan_mdchecnt = 17; // 시간외단일가매도누적체결건수
-    sint64 dan_msvolume = 18; // 시간외단일가매수누적체결량
-    sint32 dan_mschecnt = 19; // 시간외단일가매수누적체결건수
-    sint32 dan_prevolume = 20; // 시간외단일가직전거래량
-    sint32 dan_precvolume = 21; // 시간외단일가직전체결수량
-    float dan_cpower = 22; // 시간외단일가체결강도
-    string dan_status = 23; // 시간외단일가장정보
+    string dan9chetime = 1; // 시간외단일가체결시간
+    string dan9sign = 2; // 시간외단일가전일대비구분
+    sint32 dan9change = 3; // 시간외단일가전일대비
+    float dan9drate = 4; // 시간외단일가등락율
+    sint32 dan9price = 5; // 시간외단일가현재가
+    string dan9opentime = 6; // 시간외단일가시가시간
+    sint32 dan9open = 7; // 시간외단일가시가
+    string dan9hightime = 8; // 시간외단일가고가시간
+    sint32 dan9high = 9; // 시간외단일가고가
+    string dan9lowtime = 10; // 시간외단일가저가시간
+    sint32 dan9low = 11; // 시간외단일가저가
+    string dan9cgubun = 12; // 시간외단일가체결구분
+    sint32 dan9cvolume = 13; // 시간외단일가체결량
+    sint64 dan9volume = 14; // 시간외단일가누적거래량
+    sint64 dan9value = 15; // 시간외단일가누적거래대금
+    sint64 dan9mdvolume = 16; // 시간외단일가매도누적체결량
+    sint32 dan9mdchecnt = 17; // 시간외단일가매도누적체결건수
+    sint64 dan9msvolume = 18; // 시간외단일가매수누적체결량
+    sint32 dan9mschecnt = 19; // 시간외단일가매수누적체결건수
+    sint32 dan9prevolume = 20; // 시간외단일가직전거래량
+    sint32 dan9precvolume = 21; // 시간외단일가직전체결수량
+    float dan9cpower = 22; // 시간외단일가체결강도
+    string dan9status = 23; // 시간외단일가장정보
     string shcode = 24; // 단축코드
 }
 
@@ -2908,29 +2908,29 @@ message  DS3_InBlock {
 }
 
 message  DS3_OutBlock {
-    string dan_chetime = 1; // 시간외단일가체결시간
-    string dan_sign = 2; // 시간외단일가전일대비구분
-    sint32 dan_change = 3; // 시간외단일가전일대비
-    float dan_drate = 4; // 시간외단일가등락율
-    sint32 dan_price = 5; // 시간외단일가현재가
-    string dan_opentime = 6; // 시간외단일가시가시간
-    sint32 dan_open = 7; // 시간외단일가시가
-    string dan_hightime = 8; // 시간외단일가고가시간
-    sint32 dan_high = 9; // 시간외단일가고가
-    string dan_lowtime = 10; // 시간외단일가저가시간
-    sint32 dan_low = 11; // 시간외단일가저가
-    string dan_cgubun = 12; // 시간외단일가체결구분
-    sint32 dan_cvolume = 13; // 시간외단일가체결량
-    sint64 dan_volume = 14; // 시간외단일가누적거래량
-    sint64 dan_value = 15; // 시간외단일가누적거래대금
-    sint64 dan_mdvolume = 16; // 시간외단일가매도누적체결량
-    sint32 dan_mdchecnt = 17; // 시간외단일가매도누적체결건수
-    sint64 dan_msvolume = 18; // 시간외단일가매수누적체결량
-    sint32 dan_mschecnt = 19; // 시간외단일가매수누적체결건수
-    sint32 dan_prevolume = 20; // 시간외단일가직전거래량
-    sint32 dan_precvolume = 21; // 시간외단일가직전체결수량
-    float dan_cpower = 22; // 시간외단일가체결강도
-    string dan_status = 23; // 시간외단일가장정보
+    string dan9chetime = 1; // 시간외단일가체결시간
+    string dan9sign = 2; // 시간외단일가전일대비구분
+    sint32 dan9change = 3; // 시간외단일가전일대비
+    float dan9drate = 4; // 시간외단일가등락율
+    sint32 dan9price = 5; // 시간외단일가현재가
+    string dan9opentime = 6; // 시간외단일가시가시간
+    sint32 dan9open = 7; // 시간외단일가시가
+    string dan9hightime = 8; // 시간외단일가고가시간
+    sint32 dan9high = 9; // 시간외단일가고가
+    string dan9lowtime = 10; // 시간외단일가저가시간
+    sint32 dan9low = 11; // 시간외단일가저가
+    string dan9cgubun = 12; // 시간외단일가체결구분
+    sint32 dan9cvolume = 13; // 시간외단일가체결량
+    sint64 dan9volume = 14; // 시간외단일가누적거래량
+    sint64 dan9value = 15; // 시간외단일가누적거래대금
+    sint64 dan9mdvolume = 16; // 시간외단일가매도누적체결량
+    sint32 dan9mdchecnt = 17; // 시간외단일가매도누적체결건수
+    sint64 dan9msvolume = 18; // 시간외단일가매수누적체결량
+    sint32 dan9mschecnt = 19; // 시간외단일가매수누적체결건수
+    sint32 dan9prevolume = 20; // 시간외단일가직전거래량
+    sint32 dan9precvolume = 21; // 시간외단일가직전체결수량
+    float dan9cpower = 22; // 시간외단일가체결강도
+    string dan9status = 23; // 시간외단일가장정보
     string shcode = 24; // 단축코드
 }
 
@@ -2940,12 +2940,12 @@ message  DVI_InBlock {
 }
 
 message  DVI_OutBlock {
-    string vi_gubun = 1; // 구분(0:해제 1:정적발동 2:동적발동 3:정적&동적)
-    sint32 svi_recprice = 2; // 정적VI발동기준가격
-    sint32 dvi_recprice = 3; // 동적VI발동기준가격
-    sint32 vi_trgprice = 4; // VI발동가격
+    string vi9gubun = 1; // 구분(0:해제 1:정적발동 2:동적발동 3:정적&동적)
+    sint32 svi9recprice = 2; // 정적VI발동기준가격
+    sint32 dvi9recprice = 3; // 동적VI발동기준가격
+    sint32 vi9trgprice = 4; // VI발동가격
     string shcode = 5; // 단축코드(KEY)
-    string ref_shcode = 6; // 참조코드(미사용)
+    string ref9shcode = 6; // 참조코드(미사용)
     string time = 7; // 시간
 }
 
@@ -3054,7 +3054,7 @@ message  ESN_OutBlock {
     sint32 change = 13; // ELW전일대비
     string date = 14; // 일자
     float tickvalue = 15; // 틱환산
-    float lp_impv = 16; // LP내재변동성
+    float lp9impv = 16; // LP내재변동성
 }
 
 // EU0   EUX접수
@@ -3171,16 +3171,16 @@ message  EU0_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // EU1  EUX체결
@@ -3297,16 +3297,16 @@ message  EU1_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // EU2  EUX확인
@@ -3423,16 +3423,16 @@ message  EU2_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // FC0  KOSPI200선물체결(C0)
@@ -3479,9 +3479,9 @@ message  FD0_InBlock {
 
 message  FD0_OutBlock {
     string gubun = 1; // 접속매매여부
-    string dy_gubun = 2; // 실시간가격제한여부
-    float dy_uplmtprice = 3; // 실시간상한가
-    float dy_dnlmtprice = 4; // 실시간하한가
+    string dy9gubun = 2; // 실시간가격제한여부
+    float dy9uplmtprice = 3; // 실시간상한가
+    float dy9dnlmtprice = 4; // 실시간하한가
     string futcode = 5; // 단축코드
 }
 
@@ -3528,7 +3528,7 @@ message  FH0_OutBlock {
     sint32 totbidcnt = 35; // 매수호가총건수
     string futcode = 36; // 단축코드
     string danhochk = 37; // 단일가호가여부
-    string alloc_gubun = 38; // 배분적용구분
+    string alloc9gubun = 38; // 배분적용구분
 }
 
 //FOCCQ33600 주식계좌 기간별수익률 상세
@@ -3685,9 +3685,9 @@ message  H01_OutBlock {
     string macid = 36; // MAC주소
     string orddate = 37; // 호가일자
     string rcvtime = 38; // 회원사주문시각
-    string mem_filler = 39; // mem_filler
-    string mem_accno = 40; // mem_accno
-    string mem_filler1 = 41; // mem_filler1
+    string mem9filler = 39; // mem_filler
+    string mem9accno = 40; // mem_accno
+    string mem9filler1 = 41; // mem_filler1
     string ordacpttm = 42; // 매칭접수시간
     sint64 qty = 43; // 실정정취소수량
     string autogb = 44; // 자동취소구분
@@ -3746,7 +3746,7 @@ message  H1__OutBlock {
     sint32 totbidrem = 43; // 총매수호가잔량
     string donsigubun = 44; // 동시호가구분
     string shcode = 45; // 단축코드
-    string alloc_gubun = 46; // 배분적용구분
+    string alloc9gubun = 46; // 배분적용구분
 }
 
 // H2_  KOSPI장전시간외호가잔량(H2)
@@ -3788,62 +3788,62 @@ message  h3__OutBlock {
     sint32 bidho1 = 3; // 매수호가1
     sint32 offerrem1 = 4; // 매도호가잔량1
     sint32 bidrem1 = 5; // 매수호가잔량1
-    sint32 lp_offerho1 = 6; // LP매도호가수량1
-    sint32 lp_bidho1 = 7; // LP매수호가수량1
+    sint32 lp9offerho1 = 6; // LP매도호가수량1
+    sint32 lp9bidho1 = 7; // LP매수호가수량1
     sint32 offerho2 = 8; // 매도호가2
     sint32 bidho2 = 9; // 매수호가2
     sint32 offerrem2 = 10; // 매도호가잔량2
     sint32 bidrem2 = 11; // 매수호가잔량2
-    sint32 lp_offerho2 = 12; // LP매도호가수량2
-    sint32 lp_bidho2 = 13; // LP매수호가수량2
+    sint32 lp9offerho2 = 12; // LP매도호가수량2
+    sint32 lp9bidho2 = 13; // LP매수호가수량2
     sint32 offerho3 = 14; // 매도호가3
     sint32 bidho3 = 15; // 매수호가3
     sint32 offerrem3 = 16; // 매도호가잔량3
     sint32 bidrem3 = 17; // 매수호가잔량3
-    sint32 lp_offerho3 = 18; // LP매도호가수량3
-    sint32 lp_bidho3 = 19; // LP매수호가수량3
+    sint32 lp9offerho3 = 18; // LP매도호가수량3
+    sint32 lp9bidho3 = 19; // LP매수호가수량3
     sint32 offerho4 = 20; // 매도호가4
     sint32 bidho4 = 21; // 매수호가4
     sint32 offerrem4 = 22; // 매도호가잔량4
     sint32 bidrem4 = 23; // 매수호가잔량4
-    sint32 lp_offerho4 = 24; // LP매도호가수량4
-    sint32 lp_bidho4 = 25; // LP매수호가수량4
+    sint32 lp9offerho4 = 24; // LP매도호가수량4
+    sint32 lp9bidho4 = 25; // LP매수호가수량4
     sint32 offerho5 = 26; // 매도호가5
     sint32 bidho5 = 27; // 매수호가5
     sint32 offerrem5 = 28; // 매도호가잔량5
     sint32 bidrem5 = 29; // 매수호가잔량5
-    sint32 lp_offerho5 = 30; // LP매도호가수량5
-    sint32 lp_bidho5 = 31; // LP매수호가수량5
+    sint32 lp9offerho5 = 30; // LP매도호가수량5
+    sint32 lp9bidho5 = 31; // LP매수호가수량5
     sint32 offerho6 = 32; // 매도호가6
     sint32 bidho6 = 33; // 매수호가6
     sint32 offerrem6 = 34; // 매도호가잔량6
     sint32 bidrem6 = 35; // 매수호가잔량6
-    sint32 lp_offerho6 = 36; // LP매도호가수량6
-    sint32 lp_bidho6 = 37; // LP매수호가수량6
+    sint32 lp9offerho6 = 36; // LP매도호가수량6
+    sint32 lp9bidho6 = 37; // LP매수호가수량6
     sint32 offerho7 = 38; // 매도호가7
     sint32 bidho7 = 39; // 매수호가7
     sint32 offerrem7 = 40; // 매도호가잔량7
     sint32 bidrem7 = 41; // 매수호가잔량7
-    sint32 lp_offerho7 = 42; // LP매도호가수량7
-    sint32 lp_bidho7 = 43; // LP매수호가수량7
+    sint32 lp9offerho7 = 42; // LP매도호가수량7
+    sint32 lp9bidho7 = 43; // LP매수호가수량7
     sint32 offerho8 = 44; // 매도호가8
     sint32 bidho8 = 45; // 매수호가8
     sint32 offerrem8 = 46; // 매도호가잔량8
     sint32 bidrem8 = 47; // 매수호가잔량8
-    sint32 lp_offerho8 = 48; // LP매도호가수량8
-    sint32 lp_bidho8 = 49; // LP매수호가수량8
+    sint32 lp9offerho8 = 48; // LP매도호가수량8
+    sint32 lp9bidho8 = 49; // LP매수호가수량8
     sint32 offerho9 = 50; // 매도호가9
     sint32 bidho9 = 51; // 매수호가9
     sint32 offerrem9 = 52; // 매도호가잔량9
     sint32 bidrem9 = 53; // 매수호가잔량9
-    sint32 lp_offerho9 = 54; // LP매도호가수량9
-    sint32 lp_bidho9 = 55; // LP매수호가수량9
+    sint32 lp9offerho9 = 54; // LP매도호가수량9
+    sint32 lp9bidho9 = 55; // LP매수호가수량9
     sint32 offerho10 = 56; // 매도호가10
     sint32 bidho10 = 57; // 매수호가10
     sint32 offerrem10 = 58; // 매도호가잔량10
     sint32 bidrem10 = 59; // 매수호가잔량10
-    sint32 lp_offerho10 = 60; // LP매도호가수량10
-    sint32 lp_bidho10 = 61; // LP매수호가수량10
+    sint32 lp9offerho10 = 60; // LP매도호가수량10
+    sint32 lp9bidho10 = 61; // LP매수호가수량10
     sint32 totofferrem = 62; // 총매도호가잔량
     sint32 totbidrem = 63; // 총매수호가잔량
     string donsigubun = 64; // 동시호가구분
@@ -3902,7 +3902,7 @@ message  HA__OutBlock {
     sint32 totbidrem = 43; // 총매수호가잔량
     string donsigubun = 44; // 동시호가구분
     string shcode = 45; // 단축코드
-    string alloc_gubun = 46; // 배분적용구분
+    string alloc9gubun = 46; // 배분적용구분
 }
 
 // HB_  KOSDAQ장전시간외호가잔량(HB)
@@ -4019,9 +4019,9 @@ message  JD0_InBlock {
 
 message  JD0_OutBlock {
     string gubun = 1; // 접속매매여부
-    string dy_gubun = 2; // 실시간가격제한여부
-    sint64 dy_uplmtprice = 3; // 실시간상한가
-    sint64 dy_dnlmtprice = 4; // 실시간하한가
+    string dy9gubun = 2; // 실시간가격제한여부
+    sint64 dy9uplmtprice = 3; // 실시간상한가
+    sint64 dy9dnlmtprice = 4; // 실시간하한가
     string futcode = 5; // 단축코드
 }
 
@@ -4098,7 +4098,7 @@ message  JH0_OutBlock {
     sint32 totoffercnt = 65; // 매도호가총건수
     sint32 totbidcnt = 66; // 매수호가총건수
     string danhochk = 67; // 단일가호가여부
-    string alloc_gubun = 68; // 배분적용구분
+    string alloc9gubun = 68; // 배분적용구분
 }
 
 // JIF  장운영정보(JIF)
@@ -4304,7 +4304,7 @@ message  K3__OutBlock {
     sint64 msvolume = 18; // 매수누적체결량
     sint32 mschecnt = 19; // 매수누적체결건수
     float cpower = 20; // 체결강도
-    sint32 w_avrg = 21; // 가중평균가
+    sint32 w9avrg = 21; // 가중평균가
     sint32 offerho = 22; // 매도호가
     sint32 bidho = 23; // 매수호가
     string status = 24; // 장정보
@@ -4424,24 +4424,24 @@ message  KM__OutBlock {
     sint32 tdvalue = 65; // 전체매도체결금액합계
     sint32 tsvalue = 66; // 전체매수체결금액합계
     sint32 tval = 67; // 전체순매수 금액합계
-    sint32 p_cdvolcha = 68; // 차익매도체결수량직전대비
-    sint32 p_csvolcha = 69; // 차익매수체결수량직전대비
-    sint32 p_cvolcha = 70; // 차익순매수 수량직전대비
-    sint32 p_bdvolcha = 71; // 비차익매도체결수량직전대비
-    sint32 p_bsvolcha = 72; // 비차익매수체결수량직전대비
-    sint32 p_bvolcha = 73; // 비차익순매수 수량직전대비
-    sint32 p_tdvolcha = 74; // 전체매도체결수량직전대비
-    sint32 p_tsvolcha = 75; // 전체매수체결수량직전대비
-    sint32 p_tvolcha = 76; // 전체순매수 수량직전대비
-    sint32 p_cdvalcha = 77; // 차익매도체결금액직전대비
-    sint32 p_csvalcha = 78; // 차익매수체결금액직전대비
-    sint32 p_cvalcha = 79; // 차익순매수 금액직전대비
-    sint32 p_bdvalcha = 80; // 비차익매도체결금액직전대비
-    sint32 p_bsvalcha = 81; // 비차익매수체결금액직전대비
-    sint32 p_bvalcha = 82; // 비차익순매수 금액직전대비
-    sint32 p_tdvalcha = 83; // 전체매도체결금액직전대비
-    sint32 p_tsvalcha = 84; // 전체매수체결금액직전대비
-    sint32 p_tvalcha = 85; // 전체순매수 금액직전대비
+    sint32 p9cdvolcha = 68; // 차익매도체결수량직전대비
+    sint32 p9csvolcha = 69; // 차익매수체결수량직전대비
+    sint32 p9cvolcha = 70; // 차익순매수 수량직전대비
+    sint32 p9bdvolcha = 71; // 비차익매도체결수량직전대비
+    sint32 p9bsvolcha = 72; // 비차익매수체결수량직전대비
+    sint32 p9bvolcha = 73; // 비차익순매수 수량직전대비
+    sint32 p9tdvolcha = 74; // 전체매도체결수량직전대비
+    sint32 p9tsvolcha = 75; // 전체매수체결수량직전대비
+    sint32 p9tvolcha = 76; // 전체순매수 수량직전대비
+    sint32 p9cdvalcha = 77; // 차익매도체결금액직전대비
+    sint32 p9csvalcha = 78; // 차익매수체결금액직전대비
+    sint32 p9cvalcha = 79; // 차익순매수 금액직전대비
+    sint32 p9bdvalcha = 80; // 비차익매도체결금액직전대비
+    sint32 p9bsvalcha = 81; // 비차익매수체결금액직전대비
+    sint32 p9bvalcha = 82; // 비차익순매수 금액직전대비
+    sint32 p9tdvalcha = 83; // 전체매도체결금액직전대비
+    sint32 p9tsvalcha = 84; // 전체매수체결금액직전대비
+    sint32 p9tvalcha = 85; // 전체순매수 금액직전대비
     string gubun = 86; // 구분값
 }
 
@@ -4719,16 +4719,16 @@ message  O01_OutBlock {
     sint64 mnymgn = 107; // 증거금현금
     sint64 ordableamt = 108; // 주문가능금액
     sint64 mnyordableamt = 109; // 주문가능현금액
-    string fnoIsuno_1 = 110; // 잔고 종목번호1
-    string bnstp_1 = 111; // 잔고 매매구분1
-    sint64 unsttqty_1 = 112; // 미결제수량1
-    sint64 lqdtableqty_1 = 113; // 주문가능수량1
-    double avrprc_1 = 114; // 평균가1
-    string fnoIsuno_2 = 115; // 잔고 종목번호2
-    string bnstp_2 = 116; // 잔고 매매구분2
-    sint64 unsttqty_2 = 117; // 미결제수량2
-    sint64 lqdtableqty_2 = 118; // 주문가능수량2
-    double avrprc_2 = 119; // 평균가2
+    string fnoIsuno91 = 110; // 잔고 종목번호1
+    string bnstp91 = 111; // 잔고 매매구분1
+    sint64 unsttqty91 = 112; // 미결제수량1
+    sint64 lqdtableqty91 = 113; // 주문가능수량1
+    double avrprc91 = 114; // 평균가1
+    string fnoIsuno92 = 115; // 잔고 종목번호2
+    string bnstp92 = 116; // 잔고 매매구분2
+    sint64 unsttqty92 = 117; // 미결제수량2
+    sint64 lqdtableqty92 = 118; // 주문가능수량2
+    double avrprc92 = 119; // 평균가2
 }
 
 // OC0  KOSPI200옵션체결(C0)
@@ -4775,9 +4775,9 @@ message  OD0_InBlock {
 
 message  OD0_OutBlock {
     string gubun = 1; // 접속매매여부
-    string dy_gubun = 2; // 실시간가격제한여부
-    float dy_uplmtprice = 3; // 실시간상한가
-    float dy_dnlmtprice = 4; // 실시간하한가
+    string dy9gubun = 2; // 실시간가격제한여부
+    float dy9uplmtprice = 3; // 실시간상한가
+    float dy9dnlmtprice = 4; // 실시간하한가
     string opttcode = 5; // 단축코드
 }
 
@@ -4824,7 +4824,7 @@ message  OH0_OutBlock {
     sint32 totbidcnt = 35; // 매수호가총건수
     string optcode = 36; // 단축코드
     string danhochk = 37; // 단일가호가여부
-    string alloc_gubun = 38; // 배분적용구분
+    string alloc9gubun = 38; // 배분적용구분
 }
 
 // OK_  KOSDAQ거래원(OK)
@@ -5066,24 +5066,24 @@ message  PM__OutBlock {
     sint32 tdvalue = 65; // 전체매도체결금액합계
     sint32 tsvalue = 66; // 전체매수체결금액합계
     sint32 tval = 67; // 전체순매수 금액합계
-    sint32 p_cdvolcha = 68; // 차익매도체결수량직전대비
-    sint32 p_csvolcha = 69; // 차익매수체결수량직전대비
-    sint32 p_cvolcha = 70; // 차익순매수 수량직전대비
-    sint32 p_bdvolcha = 71; // 비차익매도체결수량직전대비
-    sint32 p_bsvolcha = 72; // 비차익매수체결수량직전대비
-    sint32 p_bvolcha = 73; // 비차익순매수 수량직전대비
-    sint32 p_tdvolcha = 74; // 전체매도체결수량직전대비
-    sint32 p_tsvolcha = 75; // 전체매수체결수량직전대비
-    sint32 p_tvolcha = 76; // 전체순매수 수량직전대비
-    sint32 p_cdvalcha = 77; // 차익매도체결금액직전대비
-    sint32 p_csvalcha = 78; // 차익매수체결금액직전대비
-    sint32 p_cvalcha = 79; // 차익순매수 금액직전대비
-    sint32 p_bdvalcha = 80; // 비차익매도체결금액직전대비
-    sint32 p_bsvalcha = 81; // 비차익매수체결금액직전대비
-    sint32 p_bvalcha = 82; // 비차익순매수 금액직전대비
-    sint32 p_tdvalcha = 83; // 전체매도체결금액직전대비
-    sint32 p_tsvalcha = 84; // 전체매수체결금액직전대비
-    sint32 p_tvalcha = 85; // 전체순매수 금액직전대비
+    sint32 p9cdvolcha = 68; // 차익매도체결수량직전대비
+    sint32 p9csvolcha = 69; // 차익매수체결수량직전대비
+    sint32 p9cvolcha = 70; // 차익순매수 수량직전대비
+    sint32 p9bdvolcha = 71; // 비차익매도체결수량직전대비
+    sint32 p9bsvolcha = 72; // 비차익매수체결수량직전대비
+    sint32 p9bvolcha = 73; // 비차익순매수 수량직전대비
+    sint32 p9tdvolcha = 74; // 전체매도체결수량직전대비
+    sint32 p9tsvolcha = 75; // 전체매수체결수량직전대비
+    sint32 p9tvolcha = 76; // 전체순매수 수량직전대비
+    sint32 p9cdvalcha = 77; // 차익매도체결금액직전대비
+    sint32 p9csvalcha = 78; // 차익매수체결금액직전대비
+    sint32 p9cvalcha = 79; // 차익순매수 금액직전대비
+    sint32 p9bdvalcha = 80; // 비차익매도체결금액직전대비
+    sint32 p9bsvalcha = 81; // 비차익매수체결금액직전대비
+    sint32 p9bvalcha = 82; // 비차익순매수 금액직전대비
+    sint32 p9tdvalcha = 83; // 전체매도체결금액직전대비
+    sint32 p9tsvalcha = 84; // 전체매수체결금액직전대비
+    sint32 p9tvalcha = 85; // 전체순매수 금액직전대비
     string gubun = 86; // 구분값
 }
 
@@ -5135,7 +5135,7 @@ message  S3__OutBlock {
     sint64 msvolume = 18; // 매수누적체결량
     sint32 mschecnt = 19; // 매수누적체결건수
     float cpower = 20; // 체결강도
-    sint32 w_avrg = 21; // 가중평균가
+    sint32 w9avrg = 21; // 가중평균가
     sint32 offerho = 22; // 매도호가
     sint32 bidho = 23; // 매수호가
     string status = 24; // 장정보
@@ -5169,7 +5169,7 @@ message  s3__OutBlock {
     sint64 msvolume = 18; // 매수누적체결량
     sint32 mschecnt = 19; // 매수누적체결건수
     float cpower = 20; // 체결강도
-    sint32 w_avrg = 21; // 가중평균가
+    sint32 w9avrg = 21; // 가중평균가
     sint32 offerho = 22; // 매도호가
     sint32 bidho = 23; // 매수호가
     string status = 24; // 장정보
@@ -5997,10 +5997,10 @@ message  SHO_OutBlock {
 //t0150 주식당일매매일지/수수료(t0150)
 message t0150_t0150InBlock {
     string accno = 1; // 계좌번호
-    string cts_medosu = 2; // CTS_매매구분
-    string cts_expcode = 3; // CTS_종목번호
-    string cts_price = 4; // CTS_단가
-    string cts_middiv = 5; // CTS_매체
+    string cts9medosu = 2; // CTS_매매구분
+    string cts9expcode = 3; // CTS_종목번호
+    string cts9price = 4; // CTS_단가
+    string cts9middiv = 5; // CTS_매체
 }
 
 message t0150_t0150OutBlock {
@@ -6023,10 +6023,10 @@ message t0150_t0150OutBlock {
     sint64 targtax = 17; // 합계농특세
     sint64 ttax = 18; // 합계제비용합
     sint64 tadjamt = 19; // 합계정산금액
-    string cts_medosu = 20; // CTS_매매구분
-    string cts_expcode = 21; // CTS_종목번호
-    string cts_price = 22; // CTS_단가
-    string cts_middiv = 23; // CTS_매체
+    string cts9medosu = 20; // CTS_매매구분
+    string cts9expcode = 21; // CTS_종목번호
+    string cts9price = 22; // CTS_단가
+    string cts9middiv = 23; // CTS_매체
 }
 
 message t0150_t0150OutBlock1 {
@@ -6046,10 +6046,10 @@ message t0150_t0150OutBlock1 {
 message t0151_t0151InBlock {
     string date = 1; // 일자
     string accno = 2; // 계좌번호
-    string cts_medosu = 3; // CTS_매매구분
-    string cts_expcode = 4; // CTS_종목번호
-    string cts_price = 5; // CTS_단가
-    string cts_middiv = 6; // CTS_매체
+    string cts9medosu = 3; // CTS_매매구분
+    string cts9expcode = 4; // CTS_종목번호
+    string cts9price = 5; // CTS_단가
+    string cts9middiv = 6; // CTS_매체
 }
 
 message t0151_t0151OutBlock {
@@ -6072,10 +6072,10 @@ message t0151_t0151OutBlock {
     sint64 targtax = 17; // 합계농특세
     sint64 ttax = 18; // 합계제비용합
     sint64 tadjamt = 19; // 합계정산금액
-    string cts_medosu = 20; // CTS_매매구분
-    string cts_expcode = 21; // CTS_종목번호
-    string cts_price = 22; // CTS_단가
-    string cts_middiv = 23; // CTS_매체
+    string cts9medosu = 20; // CTS_매매구분
+    string cts9expcode = 21; // CTS_종목번호
+    string cts9price = 22; // CTS_단가
+    string cts9middiv = 23; // CTS_매체
 }
 
 message t0151_t0151OutBlock1 {
@@ -6109,7 +6109,7 @@ message t0424_t0424InBlock {
     string chegb = 4; // 체결구분
     string dangb = 5; // 단일가구분
     string charge = 6; // 제비용포함여부
-    string cts_expcode = 7; // CTS_종목번호
+    string cts9expcode = 7; // CTS_종목번호
 }
 
 message t0424_t0424OutBlock {
@@ -6117,7 +6117,7 @@ message t0424_t0424OutBlock {
     sint64 dtsunik = 2; // 실현손익
     sint64 mamt = 3; // 매입금액
     sint64 sunamt1 = 4; // 추정D2예수금
-    string cts_expcode = 5; // CTS_종목번호
+    string cts9expcode = 5; // CTS_종목번호
     sint64 tappamt = 6; // 평가금액
     sint64 tdtsunik = 7; // 평가손익
 }
@@ -6162,7 +6162,7 @@ message t0425_t0425InBlock {
     string chegb = 4; // 체결구분
     string medosu = 5; // 매매구분
     string sortgb = 6; // 정렬순서
-    string cts_ordno = 7; // 주문번호
+    string cts9ordno = 7; // 주문번호
 }
 
 message t0425_t0425OutBlock {
@@ -6174,7 +6174,7 @@ message t0425_t0425OutBlock {
     sint64 tmdamt = 6; // 총매도체결금액
     sint64 tmsamt = 7; // 총매수체결금액
     sint64 tax = 8; // 추정제세금
-    string cts_ordno = 9; // 주문번호
+    string cts9ordno = 9; // 주문번호
 }
 
 message t0425_t0425OutBlock1 {
@@ -6207,11 +6207,11 @@ message t0434_t0434InBlock {
     string expcode = 3; // 종목번호
     string chegb = 4; // 체결구분
     string sortgb = 5; // 정렬순서
-    string cts_ordno = 6; // CTS_주문번호
+    string cts9ordno = 6; // CTS_주문번호
 }
 
 message t0434_t0434OutBlock {
-    string cts_ordno = 1; // CTS_주문번호
+    string cts9ordno = 1; // CTS_주문번호
 }
 
 message t0434_t0434OutBlock1 {
@@ -6237,14 +6237,14 @@ message t0434_t0434OutBlock1 {
 message t0441_t0441InBlock {
     string accno = 1; // 계좌번호
     string passwd = 2; // 비밀번호
-    string cts_expcode = 3; // CTS_종목번호
-    string cts_medocd = 4; // CTS_매매구분
+    string cts9expcode = 3; // CTS_종목번호
+    string cts9medocd = 4; // CTS_매매구분
 }
 
 message t0441_t0441OutBlock {
     sint64 tdtsunik = 1; // 매매손익합계
-    string cts_expcode = 2; // CTS_종목번호
-    string cts_medocd = 3; // CTS_매매구분
+    string cts9expcode = 2; // CTS_종목번호
+    string cts9medocd = 3; // CTS_매매구분
     sint64 tappamt = 4; // 평가금액
     sint64 tsunik = 5; // 평가손익
 }
@@ -6350,7 +6350,7 @@ message t1101_t1101OutBlock {
     float yediff = 77; // 예상체결등락율
     sint64 tmoffer = 78; // 시간외매도잔량
     sint64 tmbid = 79; // 시간외매수잔량
-    string ho_status = 80; // 동시구분
+    string ho9status = 80; // 동시구분
     string shcode = 81; // 단축코드
     sint32 uplmtprice = 82; // 상한가
     sint32 dnlmtprice = 83; // 하한가
@@ -6487,7 +6487,7 @@ message t1102_t1102OutBlock {
     string info3 = 120; // 정지/연장구분
     string info4 = 121; // 투자/불성실구분
     string janginfo = 122; // 장구분
-    float t_per = 123; // T.PER
+    float t9per = 123; // T.PER
     string tonghwa = 124; // 통화ISO코드
     sint64 dval1 = 125; // 총매도대금1
     sint64 sval1 = 126; // 총매수대금1
@@ -6514,17 +6514,17 @@ message t1102_t1102OutBlock {
     sint32 ftradmdavg = 147; // 외국계매도평단가
     sint32 ftradmsavg = 148; // 외국계매수평단가
     string info5 = 149; // 투자주의환기
-    string spac_gubun = 150; // 기업인수목적회사여부
+    string spac9gubun = 150; // 기업인수목적회사여부
     sint32 issueprice = 151; // 발행가격
-    string alloc_gubun = 152; // 배분적용구분코드(1:배분발생2:배분해제그외:미발생)
-    string alloc_text = 153; // 배분적용구분
-    string shterm_text = 154; // 단기과열/VI발동
-    sint32 svi_uplmtprice = 155; // 정적VI상한가
-    sint32 svi_dnlmtprice = 156; // 정적VI하한가
-    string low_lqdt_gu = 157; // 저유동성종목여부
-    string abnormal_rise_gu = 158; // 이상급등종목여부
-    string lend_text = 159; // 대차불가표시
-    string ty_text = 160; // ETF/ETN투자유의
+    string alloc9gubun = 152; // 배분적용구분코드(1:배분발생2:배분해제그외:미발생)
+    string alloc9text = 153; // 배분적용구분
+    string shterm9text = 154; // 단기과열/VI발동
+    sint32 svi9uplmtprice = 155; // 정적VI상한가
+    sint32 svi9dnlmtprice = 156; // 정적VI하한가
+    string low9lqdt9gu = 157; // 저유동성종목여부
+    string abnormal9rise9gu = 158; // 이상급등종목여부
+    string lend9text = 159; // 대차불가표시
+    string ty9text = 160; // ETF/ETN투자유의
 }
 
 //t1104 주식현재가시세메모(t1104)
@@ -6573,11 +6573,11 @@ message t1301_t1301InBlock {
     sint64 cvolume = 2; // 특이거래량
     string starttime = 3; // 시작시간
     string endtime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t1301_t1301OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1301_t1301OutBlock1 {
@@ -6606,7 +6606,7 @@ message t1302_t1302InBlock {
 }
 
 message t1302_t1302OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1302_t1302OutBlock1 {
@@ -6660,7 +6660,7 @@ message t1305_t1305OutBlock1 {
     sint32 change = 7; // 전일대비
     float diff = 8; // 등락율
     sint64 volume = 9; // 누적거래량
-    float diff_vol = 10; // 거래증가율
+    float diff9vol = 10; // 거래증가율
     float chdegree = 11; // 체결강도
     float sojinrate = 12; // 소진율
     float changerate = 13; // 회전율
@@ -6669,15 +6669,15 @@ message t1305_t1305OutBlock1 {
     string shcode = 16; // 종목코드
     sint64 value = 17; // 누적거래대금(단위:백만)
     sint64 ppvolume = 18; // 개인순매수
-    string o_sign = 19; // 시가대비구분
-    sint32 o_change = 20; // 시가대비
-    float o_diff = 21; // 시가기준등락율
-    string h_sign = 22; // 고가대비구분
-    sint32 h_change = 23; // 고가대비
-    float h_diff = 24; // 고가기준등락율
-    string l_sign = 25; // 저가대비구분
-    sint32 l_change = 26; // 저가대비
-    float l_diff = 27; // 저가기준등락율
+    string o9sign = 19; // 시가대비구분
+    sint32 o9change = 20; // 시가대비
+    float o9diff = 21; // 시가기준등락율
+    string h9sign = 22; // 고가대비구분
+    sint32 h9change = 23; // 고가대비
+    float h9diff = 24; // 고가기준등락율
+    string l9sign = 25; // 저가대비구분
+    sint32 l9change = 26; // 저가대비
+    float l9diff = 27; // 저가기준등락율
     sint64 marketcap = 28; // 시가총액(단위:백만)
 }
 
@@ -6686,7 +6686,7 @@ message t1308_t1308InBlock {
     string shcode = 1; // 단축코드
     string starttime = 2; // 시작시간
     string endtime = 3; // 종료시간
-    string bun_term = 4; // 분간격
+    string bun9term = 4; // 분간격
 }
 
 message t1308_t1308OutBlock1 {
@@ -6714,11 +6714,11 @@ message t1310_t1310InBlock {
     string timegb = 2; // 분틱구분
     string shcode = 3; // 단축코드
     string endtime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t1310_t1310OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1310_t1310OutBlock1 {
@@ -6770,11 +6770,11 @@ message t1403_t1403OutBlock1 {
 message t1404_t1404InBlock {
     string gubun = 1; // 구분
     string jongchk = 2; // 종목체크
-    string cts_shcode = 3; // 종목코드_CTS
+    string cts9shcode = 3; // 종목코드_CTS
 }
 
 message t1404_t1404OutBlock {
-    string cts_shcode = 1; // 종목코드_CTS
+    string cts9shcode = 1; // 종목코드_CTS
 }
 
 message t1404_t1404OutBlock1 {
@@ -6797,11 +6797,11 @@ message t1404_t1404OutBlock1 {
 message t1405_t1405InBlock {
     string gubun = 1; // 구분
     string jongchk = 2; // 종목체크
-    string cts_shcode = 3; // 종목코드_CTS
+    string cts9shcode = 3; // 종목코드_CTS
 }
 
 message t1405_t1405OutBlock {
-    string cts_shcode = 1; // 종목코드_CTS
+    string cts9shcode = 1; // 종목코드_CTS
 }
 
 message t1405_t1405OutBlock1 {
@@ -6819,11 +6819,11 @@ message t1405_t1405OutBlock1 {
 //t1410 초저유동성조회(t1410)
 message t1410_t1410InBlock {
     string gubun = 1; // 구분
-    string cts_shcode = 2; // 종목코드_CTS
+    string cts9shcode = 2; // 종목코드_CTS
 }
 
 message t1410_t1410OutBlock {
-    string cts_shcode = 1; // 종목코드_CTS
+    string cts9shcode = 1; // 종목코드_CTS
 }
 
 message t1410_t1410OutBlock1 {
@@ -6871,7 +6871,7 @@ message t1422_t1422InBlock {
     string gubun = 2; // 구분
     string jnilgubun = 3; // 전일구분
     string sign = 4; // 상하한구분
-    sint64 jc_num = 5; // 대상제외
+    sint64 jc9num = 5; // 대상제외
     sint32 sprice = 6; // 시작가격
     sint32 eprice = 7; // 종료가격
     sint64 volume = 8; // 거래량
@@ -6890,7 +6890,7 @@ message t1422_t1422OutBlock1 {
     sint32 change = 4; // 전일대비
     float diff = 5; // 등락율
     sint64 volume = 6; // 누적거래량
-    float diff_vol = 7; // 거래증가율
+    float diff9vol = 7; // 거래증가율
     sint64 offerrem1 = 8; // 매도잔량
     sint64 bidrem1 = 9; // 매수잔량
     string last = 10; // 최종진입
@@ -6905,7 +6905,7 @@ message t1427_t1427InBlock {
     string gubun = 2; // 구분
     string signgubun = 3; // 상하한가구분
     sint32 diff = 4; // 등락율
-    sint64 jc_num = 5; // 대상제외
+    sint64 jc9num = 5; // 대상제외
     sint32 sprice = 6; // 시작가격
     sint32 eprice = 7; // 종료가격
     sint64 volume = 8; // 거래량
@@ -6925,7 +6925,7 @@ message t1427_t1427OutBlock1 {
     sint32 change = 4; // 전일대비
     float diff = 5; // 등락율
     sint64 volume = 6; // 누적거래량
-    float diff_vol = 7; // 거래증가율
+    float diff9vol = 7; // 거래증가율
     sint32 lmtprice = 8; // 상한가/하한가
     float rate = 9; // 대비율
     string shcode = 10; // 종목코드
@@ -6944,7 +6944,7 @@ message t1442_t1442InBlock {
     string type1 = 2; // 신고신저
     string type2 = 3; // 기간
     string type3 = 4; // 유지여부
-    sint64 jc_num = 5; // 대상제외
+    sint64 jc9num = 5; // 대상제외
     sint32 sprice = 6; // 시작가격
     sint32 eprice = 7; // 종료가격
     sint64 volume = 8; // 거래량
@@ -6987,10 +6987,10 @@ message t1444_t1444OutBlock1 {
     sint32 change = 5; // 전일대비
     float diff = 6; // 등락율
     sint64 volume = 7; // 거래량
-    float vol_rate = 8; // 거래비중
+    float vol9rate = 8; // 거래비중
     sint64 total = 9; // 시가총액
     float rate = 10; // 비중
-    float for_rate = 11; // 외인비중
+    float for9rate = 11; // 외인비중
 }
 
 //t1449 가격대별매매비중조회(t1449)
@@ -7027,7 +7027,7 @@ message t1452_t1452InBlock {
     string jnilgubun = 2; // 전일구분
     sint32 sdiff = 3; // 시작등락율
     sint32 ediff = 4; // 종료등락율
-    sint64 jc_num = 5; // 대상제외
+    sint64 jc9num = 5; // 대상제외
     sint32 sprice = 6; // 시작가격
     sint32 eprice = 7; // 종료가격
     sint64 volume = 8; // 거래량
@@ -7047,7 +7047,7 @@ message t1452_t1452OutBlock1 {
     sint64 volume = 6; // 누적거래량
     float vol = 7; // 회전율
     sint64 jnilvolume = 8; // 전일거래량
-    float bef_diff = 9; // 전일비
+    float bef9diff = 9; // 전일비
     string shcode = 10; // 종목코드
 }
 
@@ -7055,12 +7055,12 @@ message t1452_t1452OutBlock1 {
 message t1463_t1463InBlock {
     string gubun = 1; // 구분
     string jnilgubun = 2; // 전일구분
-    sint64 jc_num = 3; // 대상제외
+    sint64 jc9num = 3; // 대상제외
     sint32 sprice = 4; // 시작가격
     sint32 eprice = 5; // 종료가격
     sint64 volume = 6; // 거래량
     sint32 idx = 7; // IDX
-    sint64 jc_num2 = 8; // 대상제외2
+    sint64 jc9num2 = 8; // 대상제외2
 }
 
 message t1463_t1463OutBlock {
@@ -7076,7 +7076,7 @@ message t1463_t1463OutBlock1 {
     sint64 volume = 6; // 누적거래량
     sint64 value = 7; // 거래대금
     sint64 jnilvalue = 8; // 전일거래대금
-    float bef_diff = 9; // 전일비
+    float bef9diff = 9; // 전일비
     string shcode = 10; // 종목코드
     string filler = 11; // filler
     sint64 jnilvolume = 12; // 전일거래량
@@ -7175,12 +7175,12 @@ message t1485_t1485OutBlock1 {
 //t1486 시간별예상체결가(t1486)
 message t1486_t1486InBlock {
     string shcode = 1; // 단축코드
-    string cts_time = 2; // 시간CTS
+    string cts9time = 2; // 시간CTS
     int32 cnt = 3; // 조회건수
 }
 
 message t1486_t1486OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1486_t1486OutBlock1 {
@@ -7336,13 +7336,13 @@ message t1514_t1514InBlock {
     string upcode = 1; // 업종코드
     string gubun1 = 2; // 구분1
     string gubun2 = 3; // 구분2
-    string cts_date = 4; // CTS_일자
+    string cts9date = 4; // CTS_일자
     int32 cnt = 5; // 조회건수
-    string rate_gbn = 6; // 비중구분
+    string rate9gbn = 6; // 비중구분
 }
 
 message t1514_t1514OutBlock {
-    string cts_date = 1; // CTS_일자
+    string cts9date = 1; // CTS_일자
 }
 
 message t1514_t1514OutBlock1 {
@@ -7352,7 +7352,7 @@ message t1514_t1514OutBlock1 {
     float change = 4; // 전일대비
     float diff = 5; // 등락율
     sint64 volume = 6; // 거래량
-    float diff_vol = 7; // 거래증가율
+    float diff9vol = 7; // 거래증가율
     sint64 value1 = 8; // 거래대금1
     sint32 high = 9; // 상승
     sint32 unchg = 10; // 보합
@@ -7402,7 +7402,7 @@ message t1516_t1516OutBlock1 {
     float perx = 12; // PER
     sint64 frgsvolume = 13; // 외인순매수
     sint64 orgsvolume = 14; // 기관순매수
-    float diff_vol = 15; // 거래증가율
+    float diff9vol = 15; // 거래증가율
     string shcode = 16; // 종목코드
     sint64 total = 17; // 시가총액
     sint64 value = 18; // 거래대금
@@ -7447,7 +7447,7 @@ message t1533_t1533OutBlock1 {
     sint32 upcnt = 3; // 상승
     sint32 dncnt = 4; // 하락
     float uprate = 5; // 상승비율
-    float diff_vol = 6; // 거래증가율
+    float diff9vol = 6; // 거래증가율
     float avgdiff = 7; // 평균등락율
     float chgdiff = 8; // 대비등락율
     string tmcode = 9; // 테마코드
@@ -7491,381 +7491,381 @@ message t1601_t1601InBlock {
 }
 
 message t1601_t1601OutBlock1 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t1601_t1601OutBlock2 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t1601_t1601OutBlock3 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t1601_t1601OutBlock4 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t1601_t1601OutBlock5 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t1601_t1601OutBlock6 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 //t1602 시간대별투자자매매추이(t1602)
@@ -7874,90 +7874,90 @@ message t1602_t1602InBlock {
     string upcode = 2; // 업종코드
     string gubun1 = 3; // 수량구분
     string gubun2 = 4; // 전일분구분
-    string cts_time = 5; // CTSTIME
-    sint32 cts_idx = 6; // CTSIDX
+    string cts9time = 5; // CTSTIME
+    sint32 cts9idx = 6; // CTSIDX
     int32 cnt = 7; // 조회건수
     string gubun3 = 8; // 직전대비구분(C:직전대비)
 }
 
 message t1602_t1602OutBlock {
-    string cts_time = 1; // CTSTIME
-    string tjjcode_08 = 2; // 개인투자자코드
-    sint64 ms_08 = 3; // 개인매수
-    sint64 md_08 = 4; // 개인매도
-    sint64 rate_08 = 5; // 개인증감
-    sint64 svolume_08 = 6; // 개인순매수
-    string tjjcode_17 = 7; // 외국인투자자코드
-    sint64 ms_17 = 8; // 외국인매수
-    sint64 md_17 = 9; // 외국인매도
-    sint64 rate_17 = 10; // 외국인증감
-    sint64 svolume_17 = 11; // 외국인순매수
-    string tjjcode_18 = 12; // 기관계투자자코드
-    sint64 ms_18 = 13; // 기관계매수
-    sint64 md_18 = 14; // 기관계매도
-    sint64 rate_18 = 15; // 기관계증감
-    sint64 svolume_18 = 16; // 기관계순매수
-    string tjjcode_01 = 17; // 증권투자자코드
-    sint64 ms_01 = 18; // 증권매수
-    sint64 md_01 = 19; // 증권매도
-    sint64 rate_01 = 20; // 증권증감
-    sint64 svolume_01 = 21; // 증권순매수
-    string tjjcode_03 = 22; // 투신투자자코드
-    sint64 ms_03 = 23; // 투신매수
-    sint64 md_03 = 24; // 투신매도
-    sint64 rate_03 = 25; // 투신증감
-    sint64 svolume_03 = 26; // 투신순매수
-    string tjjcode_04 = 27; // 은행투자자코드
-    sint64 ms_04 = 28; // 은행매수
-    sint64 md_04 = 29; // 은행매도
-    sint64 rate_04 = 30; // 은행증감
-    sint64 svolume_04 = 31; // 은행순매수
-    string tjjcode_02 = 32; // 보험투자자코드
-    sint64 ms_02 = 33; // 보험매수
-    sint64 md_02 = 34; // 보험매도
-    sint64 rate_02 = 35; // 보험증감
-    sint64 svolume_02 = 36; // 보험순매수
-    string tjjcode_05 = 37; // 종금투자자코드
-    sint64 ms_05 = 38; // 종금매수
-    sint64 md_05 = 39; // 종금매도
-    sint64 rate_05 = 40; // 종금증감
-    sint64 svolume_05 = 41; // 종금순매수
-    string tjjcode_06 = 42; // 기금투자자코드
-    sint64 ms_06 = 43; // 기금매수
-    sint64 md_06 = 44; // 기금매도
-    sint64 rate_06 = 45; // 기금증감
-    sint64 svolume_06 = 46; // 기금순매수
-    string tjjcode_07 = 47; // 기타투자자코드
-    sint64 ms_07 = 48; // 기타매수
-    sint64 md_07 = 49; // 기타매도
-    sint64 rate_07 = 50; // 기타증감
-    sint64 svolume_07 = 51; // 기타순매수
-    string tjjcode_11 = 52; // 국가투자자코드
-    sint64 ms_11 = 53; // 국가매수
-    sint64 md_11 = 54; // 국가매도
-    sint64 rate_11 = 55; // 국가증감
-    sint64 svolume_11 = 56; // 국가순매수
-    string tjjcode_00 = 57; // 사모펀드코드
-    sint64 ms_00 = 58; // 사모펀드매수
-    sint64 md_00 = 59; // 사모펀드매도
-    sint64 rate_00 = 60; // 사모펀드증감
-    sint64 svolume_00 = 61; // 사모펀드순매수
+    string cts9time = 1; // CTSTIME
+    string tjjcode908 = 2; // 개인투자자코드
+    sint64 ms908 = 3; // 개인매수
+    sint64 md908 = 4; // 개인매도
+    sint64 rate908 = 5; // 개인증감
+    sint64 svolume908 = 6; // 개인순매수
+    string tjjcode917 = 7; // 외국인투자자코드
+    sint64 ms917 = 8; // 외국인매수
+    sint64 md917 = 9; // 외국인매도
+    sint64 rate917 = 10; // 외국인증감
+    sint64 svolume917 = 11; // 외국인순매수
+    string tjjcode918 = 12; // 기관계투자자코드
+    sint64 ms918 = 13; // 기관계매수
+    sint64 md918 = 14; // 기관계매도
+    sint64 rate918 = 15; // 기관계증감
+    sint64 svolume918 = 16; // 기관계순매수
+    string tjjcode901 = 17; // 증권투자자코드
+    sint64 ms901 = 18; // 증권매수
+    sint64 md901 = 19; // 증권매도
+    sint64 rate901 = 20; // 증권증감
+    sint64 svolume901 = 21; // 증권순매수
+    string tjjcode903 = 22; // 투신투자자코드
+    sint64 ms903 = 23; // 투신매수
+    sint64 md903 = 24; // 투신매도
+    sint64 rate903 = 25; // 투신증감
+    sint64 svolume903 = 26; // 투신순매수
+    string tjjcode904 = 27; // 은행투자자코드
+    sint64 ms904 = 28; // 은행매수
+    sint64 md904 = 29; // 은행매도
+    sint64 rate904 = 30; // 은행증감
+    sint64 svolume904 = 31; // 은행순매수
+    string tjjcode902 = 32; // 보험투자자코드
+    sint64 ms902 = 33; // 보험매수
+    sint64 md902 = 34; // 보험매도
+    sint64 rate902 = 35; // 보험증감
+    sint64 svolume902 = 36; // 보험순매수
+    string tjjcode905 = 37; // 종금투자자코드
+    sint64 ms905 = 38; // 종금매수
+    sint64 md905 = 39; // 종금매도
+    sint64 rate905 = 40; // 종금증감
+    sint64 svolume905 = 41; // 종금순매수
+    string tjjcode906 = 42; // 기금투자자코드
+    sint64 ms906 = 43; // 기금매수
+    sint64 md906 = 44; // 기금매도
+    sint64 rate906 = 45; // 기금증감
+    sint64 svolume906 = 46; // 기금순매수
+    string tjjcode907 = 47; // 기타투자자코드
+    sint64 ms907 = 48; // 기타매수
+    sint64 md907 = 49; // 기타매도
+    sint64 rate907 = 50; // 기타증감
+    sint64 svolume907 = 51; // 기타순매수
+    string tjjcode911 = 52; // 국가투자자코드
+    sint64 ms911 = 53; // 국가매수
+    sint64 md911 = 54; // 국가매도
+    sint64 rate911 = 55; // 국가증감
+    sint64 svolume911 = 56; // 국가순매수
+    string tjjcode900 = 57; // 사모펀드코드
+    sint64 ms900 = 58; // 사모펀드매수
+    sint64 md900 = 59; // 사모펀드매도
+    sint64 rate900 = 60; // 사모펀드증감
+    sint64 svolume900 = 61; // 사모펀드순매수
 }
 
 message t1602_t1602OutBlock1 {
     string time = 1; // 시간
-    sint64 sv_08 = 2; // 개인순매수
-    sint64 sv_17 = 3; // 외국인순매수
-    sint64 sv_18 = 4; // 기관계순매수
-    sint64 sv_01 = 5; // 증권순매수
-    sint64 sv_03 = 6; // 투신순매수
-    sint64 sv_04 = 7; // 은행순매수
-    sint64 sv_02 = 8; // 보험순매수
-    sint64 sv_05 = 9; // 종금순매수
-    sint64 sv_06 = 10; // 기금순매수
-    sint64 sv_07 = 11; // 기타순매수
-    sint64 sv_11 = 12; // 국가순매수
-    sint64 sv_00 = 13; // 사모펀드순매수
+    sint64 sv908 = 2; // 개인순매수
+    sint64 sv917 = 3; // 외국인순매수
+    sint64 sv918 = 4; // 기관계순매수
+    sint64 sv901 = 5; // 증권순매수
+    sint64 sv903 = 6; // 투신순매수
+    sint64 sv904 = 7; // 은행순매수
+    sint64 sv902 = 8; // 보험순매수
+    sint64 sv905 = 9; // 종금순매수
+    sint64 sv906 = 10; // 기금순매수
+    sint64 sv907 = 11; // 기타순매수
+    sint64 sv911 = 12; // 국가순매수
+    sint64 sv900 = 13; // 사모펀드순매수
 }
 
 //t1603 시간대별투자자매매추이상세(t1603)
@@ -7965,15 +7965,15 @@ message t1603_t1603InBlock {
     string market = 1; // 시장구분
     string gubun1 = 2; // 투자자구분
     string gubun2 = 3; // 전일분구분
-    string cts_time = 4; // CTSTIME
-    sint32 cts_idx = 5; // CTSIDX
+    string cts9time = 4; // CTSTIME
+    sint32 cts9idx = 5; // CTSIDX
     int32 cnt = 6; // 조회건수
     string upcode = 7; // 업종코드
 }
 
 message t1603_t1603OutBlock {
-    sint32 cts_idx = 1; // CTSIDX
-    string cts_time = 2; // CTSTIME
+    sint32 cts9idx = 1; // CTSIDX
+    string cts9time = 2; // CTSTIME
 }
 
 message t1603_t1603OutBlock1 {
@@ -7998,16 +7998,16 @@ message t1615_t1615OutBlock {
     sint64 dwvalue = 2; // 위탁매도금액
     sint64 djvolume = 3; // 자기매도수량
     sint64 djvalue = 4; // 자기매도금액
-    sint64 sum_volume = 5; // 합계수량
-    sint64 sum_value = 6; // 합계금액
+    sint64 sum9volume = 5; // 합계수량
+    sint64 sum9value = 6; // 합계금액
 }
 
 message t1615_t1615OutBlock1 {
     string hname = 1; // 시장명
-    sint64 sv_08 = 2; // 개인
-    sint64 sv_17 = 3; // 외국인
-    sint64 sv_18 = 4; // 기관계
-    sint64 sv_07 = 5; // 증권
+    sint64 sv908 = 2; // 개인
+    sint64 sv917 = 3; // 외국인
+    sint64 sv918 = 4; // 기관계
+    sint64 sv907 = 5; // 증권
 }
 
 //t1617 투자자매매종합2(t1617)
@@ -8015,34 +8015,34 @@ message t1617_t1617InBlock {
     string gubun1 = 1; // 시장구분(1:코스피2:코스닥3:선물4:콜옵션5:풋옵션6:주식선물)
     string gubun2 = 2; // 수량금액구분(1:수량2:금액)
     string gubun3 = 3; // 일자구분(1:시간대별2:일별)
-    string cts_date = 4; // CTSDATE(연속키값-일자)
-    string cts_time = 5; // CTSTIME(연속키값-시간)
+    string cts9date = 4; // CTSDATE(연속키값-일자)
+    string cts9time = 5; // CTSTIME(연속키값-시간)
 }
 
 message t1617_t1617OutBlock {
-    string cts_date = 1; // CTSDATE
-    string cts_time = 2; // CTSTIME
-    sint64 ms_08 = 3; // 개인매수
-    sint64 md_08 = 4; // 개인매도
-    sint64 sv_08 = 5; // 개인순매수
-    sint64 ms_17 = 6; // 외국인매수
-    sint64 md_17 = 7; // 외국인매도
-    sint64 sv_17 = 8; // 외국인순매수
-    sint64 ms_18 = 9; // 기관계매수
-    sint64 md_18 = 10; // 기관계매도
-    sint64 sv_18 = 11; // 기관계순매수
-    sint64 ms_01 = 12; // 증권매수
-    sint64 md_01 = 13; // 증권매도
-    sint64 sv_01 = 14; // 증권순매수
+    string cts9date = 1; // CTSDATE
+    string cts9time = 2; // CTSTIME
+    sint64 ms908 = 3; // 개인매수
+    sint64 md908 = 4; // 개인매도
+    sint64 sv908 = 5; // 개인순매수
+    sint64 ms917 = 6; // 외국인매수
+    sint64 md917 = 7; // 외국인매도
+    sint64 sv917 = 8; // 외국인순매수
+    sint64 ms918 = 9; // 기관계매수
+    sint64 md918 = 10; // 기관계매도
+    sint64 sv918 = 11; // 기관계순매수
+    sint64 ms901 = 12; // 증권매수
+    sint64 md901 = 13; // 증권매도
+    sint64 sv901 = 14; // 증권순매수
 }
 
 message t1617_t1617OutBlock1 {
     string date = 1; // 날짜
     string time = 2; // 시간
-    sint64 sv_08 = 3; // 개인
-    sint64 sv_17 = 4; // 외국인
-    sint64 sv_18 = 5; // 기관계
-    sint64 sv_01 = 6; // 증권
+    sint64 sv908 = 3; // 개인
+    sint64 sv917 = 4; // 외국인
+    sint64 sv918 = 5; // 기관계
+    sint64 sv901 = 6; // 증권
 }
 
 //t1621 업종별분별투자자매매동향(챠트용)
@@ -8205,11 +8205,11 @@ message t1636_t1636InBlock {
     string gubun1 = 2; // 금액수량구분
     string gubun2 = 3; // 정렬기준
     string shcode = 4; // 종목코드
-    sint32 cts_idx = 5; // IDXCTS
+    sint32 cts9idx = 5; // IDXCTS
 }
 
 message t1636_t1636OutBlock {
-    sint32 cts_idx = 1; // IDXCTS
+    sint32 cts9idx = 1; // IDXCTS
 }
 
 message t1636_t1636OutBlock1 {
@@ -8238,11 +8238,11 @@ message t1637_t1637InBlock {
     string shcode = 3; // 종목코드
     string date = 4; // 일자
     string time = 5; // 시간
-    sint32 cts_idx = 6; // IDXCTS(9999:차트)
+    sint32 cts9idx = 6; // IDXCTS(9999:차트)
 }
 
 message t1637_t1637OutBlock {
-    sint32 cts_idx = 1; // IDXCTS
+    sint32 cts9idx = 1; // IDXCTS
 }
 
 message t1637_t1637OutBlock1 {
@@ -8364,8 +8364,8 @@ message t1665_t1665InBlock {
     string upcode = 2; // 업종코드
     string gubun2 = 3; // 수치구분(1:수치2:누적)
     string gubun3 = 4; // 단위구분(1:일2:주3:월)
-    string from_date = 5; // 시작날짜
-    string to_date = 6; // 종료날짜
+    string from9date = 5; // 시작날짜
+    string to9date = 6; // 종료날짜
 }
 
 message t1665_t1665OutBlock {
@@ -8375,36 +8375,36 @@ message t1665_t1665OutBlock {
 
 message t1665_t1665OutBlock1 {
     string date = 1; // 일자
-    sint64 sv_08 = 2; // 개인수량
-    sint64 sv_17 = 3; // 외인계수량(등록+미등록)
-    sint64 sv_18 = 4; // 기관계수량
-    sint64 sv_01 = 5; // 증권수량
-    sint64 sv_03 = 6; // 투신수량
-    sint64 sv_04 = 7; // 은행수량
-    sint64 sv_02 = 8; // 보험수량
-    sint64 sv_05 = 9; // 종금수량
-    sint64 sv_06 = 10; // 기금수량
-    sint64 sv_07 = 11; // 기타수량
-    sint64 sv_00 = 12; // 사모펀드수량
-    sint64 sv_09 = 13; // 등록외국인수량
-    sint64 sv_10 = 14; // 미등록외국인수량
-    sint64 sv_11 = 15; // 국가수량
-    sint64 sv_99 = 16; // 기타계수량(기타+국가)
-    double sa_08 = 17; // 개인금액
-    double sa_17 = 18; // 외인계금액(등록+미등록)
-    double sa_18 = 19; // 기관계금액
-    double sa_01 = 20; // 증권금액
-    double sa_03 = 21; // 투신금액
-    double sa_04 = 22; // 은행금액
-    double sa_02 = 23; // 보험금액
-    double sa_05 = 24; // 종금금액
-    double sa_06 = 25; // 기금금액
-    double sa_07 = 26; // 기타금액
-    double sa_00 = 27; // 사모펀드금액
-    double sa_09 = 28; // 등록외국인금액
-    double sa_10 = 29; // 미등록외국인금액
-    double sa_11 = 30; // 국가금액
-    double sa_99 = 31; // 기타계금액(기타+국가)
+    sint64 sv908 = 2; // 개인수량
+    sint64 sv917 = 3; // 외인계수량(등록+미등록)
+    sint64 sv918 = 4; // 기관계수량
+    sint64 sv901 = 5; // 증권수량
+    sint64 sv903 = 6; // 투신수량
+    sint64 sv904 = 7; // 은행수량
+    sint64 sv902 = 8; // 보험수량
+    sint64 sv905 = 9; // 종금수량
+    sint64 sv906 = 10; // 기금수량
+    sint64 sv907 = 11; // 기타수량
+    sint64 sv900 = 12; // 사모펀드수량
+    sint64 sv909 = 13; // 등록외국인수량
+    sint64 sv910 = 14; // 미등록외국인수량
+    sint64 sv911 = 15; // 국가수량
+    sint64 sv999 = 16; // 기타계수량(기타+국가)
+    double sa908 = 17; // 개인금액
+    double sa917 = 18; // 외인계금액(등록+미등록)
+    double sa918 = 19; // 기관계금액
+    double sa901 = 20; // 증권금액
+    double sa903 = 21; // 투신금액
+    double sa904 = 22; // 은행금액
+    double sa902 = 23; // 보험금액
+    double sa905 = 24; // 종금금액
+    double sa906 = 25; // 기금금액
+    double sa907 = 26; // 기타금액
+    double sa900 = 27; // 사모펀드금액
+    double sa909 = 28; // 등록외국인금액
+    double sa910 = 29; // 미등록외국인금액
+    double sa911 = 30; // 국가금액
+    double sa999 = 31; // 기타계금액(기타+국가)
     float jisu = 32; // 시장지수
 }
 
@@ -8444,13 +8444,13 @@ message t1702_t1702InBlock {
     string volvalgb = 3; // 금액수량구분(0:금액1:수량2:단가)
     string msmdgb = 4; // 매수매도구분(0:순매수1:매수2:매도)
     string cumulgb = 5; // 누적구분(0:일간1:누적)
-    string cts_date = 6; // CTSDATE
-    sint32 cts_idx = 7; // CTSIDX
+    string cts9date = 6; // CTSDATE
+    sint32 cts9idx = 7; // CTSIDX
 }
 
 message t1702_t1702OutBlock {
-    sint32 cts_idx = 1; // CTSIDX
-    string cts_date = 2; // CTSDATE
+    sint32 cts9idx = 1; // CTSIDX
+    string cts9date = 2; // CTSDATE
 }
 
 message t1702_t1702OutBlock1 {
@@ -8492,36 +8492,36 @@ message t1717_t1717OutBlock {
     sint32 change = 4; // 전일대비
     float diff = 5; // 등락율
     sint64 volume = 6; // 누적거래량
-    sint64 tjj0000_vol = 7; // 사모펀드(순매수량)
-    sint64 tjj0001_vol = 8; // 증권(순매수량)
-    sint64 tjj0002_vol = 9; // 보험(순매수량)
-    sint64 tjj0003_vol = 10; // 투신(순매수량)
-    sint64 tjj0004_vol = 11; // 은행(순매수량)
-    sint64 tjj0005_vol = 12; // 종금(순매수량)
-    sint64 tjj0006_vol = 13; // 기금(순매수량)
-    sint64 tjj0007_vol = 14; // 기타법인(순매수량)
-    sint64 tjj0008_vol = 15; // 개인(순매수량)
-    sint64 tjj0009_vol = 16; // 등록외국인(순매수량)
-    sint64 tjj0010_vol = 17; // 미등록외국인(순매수량)
-    sint64 tjj0011_vol = 18; // 국가외(순매수량)
-    sint64 tjj0018_vol = 19; // 기관(순매수량)
-    sint64 tjj0016_vol = 20; // 외인계(순매수량)(등록+미등록)
-    sint64 tjj0017_vol = 21; // 기타계(순매수량)(기타+국가)
-    sint64 tjj0000_dan = 22; // 사모펀드(단가)
-    sint64 tjj0001_dan = 23; // 증권(단가)
-    sint64 tjj0002_dan = 24; // 보험(단가)
-    sint64 tjj0003_dan = 25; // 투신(단가)
-    sint64 tjj0004_dan = 26; // 은행(단가)
-    sint64 tjj0005_dan = 27; // 종금(단가)
-    sint64 tjj0006_dan = 28; // 기금(단가)
-    sint64 tjj0007_dan = 29; // 기타법인(단가)
-    sint64 tjj0008_dan = 30; // 개인(단가)
-    sint64 tjj0009_dan = 31; // 등록외국인(단가)
-    sint64 tjj0010_dan = 32; // 미등록외국인(단가)
-    sint64 tjj0011_dan = 33; // 국가외(단가)
-    sint64 tjj0018_dan = 34; // 기관(단가)
-    sint64 tjj0016_dan = 35; // 외인계(단가)(등록+미등록)
-    sint64 tjj0017_dan = 36; // 기타계(단가)(기타+국가)
+    sint64 tjj00009vol = 7; // 사모펀드(순매수량)
+    sint64 tjj00019vol = 8; // 증권(순매수량)
+    sint64 tjj00029vol = 9; // 보험(순매수량)
+    sint64 tjj00039vol = 10; // 투신(순매수량)
+    sint64 tjj00049vol = 11; // 은행(순매수량)
+    sint64 tjj00059vol = 12; // 종금(순매수량)
+    sint64 tjj00069vol = 13; // 기금(순매수량)
+    sint64 tjj00079vol = 14; // 기타법인(순매수량)
+    sint64 tjj00089vol = 15; // 개인(순매수량)
+    sint64 tjj00099vol = 16; // 등록외국인(순매수량)
+    sint64 tjj00109vol = 17; // 미등록외국인(순매수량)
+    sint64 tjj00119vol = 18; // 국가외(순매수량)
+    sint64 tjj00189vol = 19; // 기관(순매수량)
+    sint64 tjj00169vol = 20; // 외인계(순매수량)(등록+미등록)
+    sint64 tjj00179vol = 21; // 기타계(순매수량)(기타+국가)
+    sint64 tjj00009dan = 22; // 사모펀드(단가)
+    sint64 tjj00019dan = 23; // 증권(단가)
+    sint64 tjj00029dan = 24; // 보험(단가)
+    sint64 tjj00039dan = 25; // 투신(단가)
+    sint64 tjj00049dan = 26; // 은행(단가)
+    sint64 tjj00059dan = 27; // 종금(단가)
+    sint64 tjj00069dan = 28; // 기금(단가)
+    sint64 tjj00079dan = 29; // 기타법인(단가)
+    sint64 tjj00089dan = 30; // 개인(단가)
+    sint64 tjj00099dan = 31; // 등록외국인(단가)
+    sint64 tjj00109dan = 32; // 미등록외국인(단가)
+    sint64 tjj00119dan = 33; // 국가외(단가)
+    sint64 tjj00189dan = 34; // 기관(단가)
+    sint64 tjj00169dan = 35; // 외인계(단가)(등록+미등록)
+    sint64 tjj00179dan = 36; // 기타계(단가)(기타+국가)
 }
 
 //t1752 종목별상위회원사(t1752)
@@ -8530,13 +8530,13 @@ message t1752_t1752InBlock {
     string traddate1 = 2; // 조회날짜1
     string traddate2 = 3; // 조회날짜2
     string fwgubun1 = 4; // 외국계구분
-    sint32 cts_idx = 5; // CTSIDX
+    sint32 cts9idx = 5; // CTSIDX
 }
 
 message t1752_t1752OutBlock {
     sint64 fwdvl = 1; // 외국계매도
     sint64 fwsvl = 2; // 외국계매수
-    sint32 cts_idx = 3; // CTSIDX
+    sint32 cts9idx = 3; // CTSIDX
 }
 
 message t1752_t1752OutBlock1 {
@@ -8570,12 +8570,12 @@ message t1771_t1771InBlock {
     string gubun1 = 3; // 구분1
     string traddate1 = 4; // 거래원날짜1
     string traddate2 = 5; // 거래원날짜2
-    sint32 cts_idx = 6; // CTSIDX
+    sint32 cts9idx = 6; // CTSIDX
     int32 cnt = 7; // 요청건수
 }
 
 message t1771_t1771OutBlock {
-    sint32 cts_idx = 1; // CTSIDX
+    sint32 cts9idx = 1; // CTSIDX
 }
 
 message t1771_t1771OutBlock2 {
@@ -8611,8 +8611,8 @@ message t1809_t1809OutBlock {
 message t1809_t1809OutBlock1 {
     string date = 1; // 일자
     string time = 2; // 시간
-    string signal_id = 3; // 신호ID
-    string signal_desc = 4; // 신호명
+    string signal9id = 3; // 신호ID
+    string signal9desc = 4; // 신호명
     string point = 5; // 신호강도
     string keyword = 6; // 뉴스신호키워드
     string seq = 7; // 신호별구분
@@ -8627,7 +8627,7 @@ message t1809_t1809OutBlock1 {
 
 //t1825 종목Q클릭검색(씽큐스마트)(t1825)
 message t1825_t1825InBlock {
-    string search_cd = 1; // 검색코드
+    string search9cd = 1; // 검색코드
     string gubun = 2; // 구분(0:전체1:코스피2:코스닥)
 }
 
@@ -8649,24 +8649,24 @@ message t1825_t1825OutBlock1 {
 
 //t1826 종목Q클릭검색리스트조회(씽큐스마트)(t1826)
 message t1826_t1826InBlock {
-    string search_gb = 1; // 검색구분(0:핵심검색1:지표검색2:시세동향3:투자자동향)
+    string search9gb = 1; // 검색구분(0:핵심검색1:지표검색2:시세동향3:투자자동향)
 }
 
 message t1826_t1826OutBlock {
-    string search_cd = 1; // 검색코드
-    string search_nm = 2; // 검색명
+    string search9cd = 1; // 검색코드
+    string search9nm = 2; // 검색명
 }
 
 //t1857 e종목검색(신버전API용)
 message t1857_t1857InBlock {
     string sRealFlag = 1; // 실시간구분(0:조회 1:실시간)
     string sSearchFlag = 2; // 종목검색구분(F:파일 S:서버)
-    string query_index = 3; // 종목검색입력값
+    string query9index = 3; // 종목검색입력값
 }
 
 message t1857_t1857OutBlock {
-    sint32 result_count = 1; // 검색종목수
-    string result_time = 2; // 포착시간
+    sint32 result9count = 1; // 검색종목수
+    string result9time = 2; // 포착시간
     string AlertNum = 3; // 실시간키
 }
 
@@ -8683,23 +8683,23 @@ message t1857_t1857OutBlock1 {
 
 //t1866 서버저장조건리스트조회(API)(t1866)
 message t1866_t1866InBlock {
-    string user_id = 1; // 로그인ID
+    string user9id = 1; // 로그인ID
     string gb = 2; // 조회구분
-    string group_name = 3; // 그룹명
+    string group9name = 3; // 그룹명
     string cont = 4; // 연속여부
-    string cont_key = 5; // 연속키
+    string cont9key = 5; // 연속키
 }
 
 message t1866_t1866OutBlock {
-    sint32 result_count = 1; // 저장조건수
+    sint32 result9count = 1; // 저장조건수
     string cont = 2; // 연속여부
-    string cont_key = 3; // 연속키
+    string cont9key = 3; // 연속키
 }
 
 message t1866_t1866OutBlock1 {
-    string query_index = 1; // 서버저장인덱스
-    string group_name = 2; // 그룹명
-    string query_name = 3; // 조건저장명
+    string query9index = 1; // 서버저장인덱스
+    string group9name = 2; // 그룹명
+    string query9name = 3; // 조건저장명
 }
 
 //t1901 ETF현재가(시세)조회(t1901)
@@ -8818,29 +8818,29 @@ message t1901_t1901OutBlock {
     float spread = 108; // 스프레드
     sint32 leverage = 109; // 레버리지
     string taxgubun = 110; // 과세구분
-    string opcom_nmk = 111; // 운용사
-    string lp_nm1 = 112; // LP1
-    string lp_nm2 = 113; // LP2
-    string lp_nm3 = 114; // LP3
-    string lp_nm4 = 115; // LP4
-    string lp_nm5 = 116; // LP5
-    string etf_cp = 117; // 복제방법
-    string etf_kind = 118; // 상품유형(Filler)
-    string vi_gubun = 119; // VI발동해제
-    string etn_kind_cd = 120; // ETN상품분류
+    string opcom9nmk = 111; // 운용사
+    string lp9nm1 = 112; // LP1
+    string lp9nm2 = 113; // LP2
+    string lp9nm3 = 114; // LP3
+    string lp9nm4 = 115; // LP4
+    string lp9nm5 = 116; // LP5
+    string etf9cp = 117; // 복제방법
+    string etf9kind = 118; // 상품유형(Filler)
+    string vi9gubun = 119; // VI발동해제
+    string etn9kind9cd = 120; // ETN상품분류
     string lastymd = 121; // ETN만기일
     string payday = 122; // ETN지급일
     string lastdate = 123; // ETN최종거래일
     string issuernmk = 124; // ETN발행시장참가자
-    string last_sdate = 125; // ETN만기상환가격결정시작일
-    string last_edate = 126; // ETN만기상환가격결정종료일
-    string lp_holdvol = 127; // ETNLP보유수량
+    string last9sdate = 125; // ETN만기상환가격결정시작일
+    string last9edate = 126; // ETN만기상환가격결정종료일
+    string lp9holdvol = 127; // ETNLP보유수량
     string listdate = 128; // 상장일
-    string etp_gb = 129; // ETP상품구분코드
-    string etn_elback_yn = 130; // ETN조기상환가능여부
+    string etp9gb = 129; // ETP상품구분코드
+    string etn9elback9yn = 130; // ETN조기상환가능여부
     string settletype = 131; // 최종결제
-    string idx_asset_class1 = 132; // 지수자산분류코드(대분류)
-    string ty_text = 133; // ETF/ETN투자유의
+    string idx9asset9class1 = 132; // 지수자산분류코드(대분류)
+    string ty9text = 133; // ETF/ETN투자유의
 }
 
 //t1902 ETF시간별추이(t1902)
@@ -8907,7 +8907,7 @@ message t1904_t1904InBlock {
 }
 
 message t1904_t1904OutBlock {
-    string chk_tday = 1; // 당일구분
+    string chk9tday = 1; // 당일구분
     string date = 2; // PDF적용일자
     sint32 price = 3; // ETF현재가
     string sign = 4; // ETF전일대비구분
@@ -8941,9 +8941,9 @@ message t1904_t1904OutBlock {
     sint32 etfnum = 32; // 구성종목수
     sint64 etfcunum = 33; // CU주식수
     sint64 cash = 34; // 현금
-    string opcom_nmk = 35; // 운용사명
-    sint64 tot_pval = 36; // 전종목평가금액합
-    sint64 tot_sigatval = 37; // 전종목구성시가총액합
+    string opcom9nmk = 35; // 운용사명
+    sint64 tot9pval = 36; // 전종목평가금액합
+    sint64 tot9sigatval = 37; // 전종목구성시가총액합
 }
 
 message t1904_t1904OutBlock1 {
@@ -8976,26 +8976,26 @@ message t1906_t1906OutBlock {
     sint32 change = 4; // 전일대비
     float diff = 5; // 등락율
     sint64 volume = 6; // 누적거래량
-    sint64 lp_offerrem1 = 7; // LP매도호가수량1
-    sint64 lp_bidrem1 = 8; // LP매수호가수량1
-    sint64 lp_offerrem2 = 9; // LP매도호가수량2
-    sint64 lp_bidrem2 = 10; // LP매수호가수량2
-    sint64 lp_offerrem3 = 11; // LP매도호가수량3
-    sint64 lp_bidrem3 = 12; // LP매수호가수량3
-    sint64 lp_offerrem4 = 13; // LP매도호가수량4
-    sint64 lp_bidrem4 = 14; // LP매수호가수량4
-    sint64 lp_offerrem5 = 15; // LP매도호가수량5
-    sint64 lp_bidrem5 = 16; // LP매수호가수량5
-    sint64 lp_offerrem6 = 17; // LP매도호가수량6
-    sint64 lp_bidrem6 = 18; // LP매수호가수량6
-    sint64 lp_offerrem7 = 19; // LP매도호가수량7
-    sint64 lp_bidrem7 = 20; // LP매수호가수량7
-    sint64 lp_offerrem8 = 21; // LP매도호가수량8
-    sint64 lp_bidrem8 = 22; // LP매수호가수량8
-    sint64 lp_offerrem9 = 23; // LP매도호가수량9
-    sint64 lp_bidrem9 = 24; // LP매수호가수량9
-    sint64 lp_offerrem10 = 25; // LP매도호가수량10
-    sint64 lp_bidrem10 = 26; // LP매수호가수량10
+    sint64 lp9offerrem1 = 7; // LP매도호가수량1
+    sint64 lp9bidrem1 = 8; // LP매수호가수량1
+    sint64 lp9offerrem2 = 9; // LP매도호가수량2
+    sint64 lp9bidrem2 = 10; // LP매수호가수량2
+    sint64 lp9offerrem3 = 11; // LP매도호가수량3
+    sint64 lp9bidrem3 = 12; // LP매수호가수량3
+    sint64 lp9offerrem4 = 13; // LP매도호가수량4
+    sint64 lp9bidrem4 = 14; // LP매수호가수량4
+    sint64 lp9offerrem5 = 15; // LP매도호가수량5
+    sint64 lp9bidrem5 = 16; // LP매수호가수량5
+    sint64 lp9offerrem6 = 17; // LP매도호가수량6
+    sint64 lp9bidrem6 = 18; // LP매수호가수량6
+    sint64 lp9offerrem7 = 19; // LP매도호가수량7
+    sint64 lp9bidrem7 = 20; // LP매수호가수량7
+    sint64 lp9offerrem8 = 21; // LP매도호가수량8
+    sint64 lp9bidrem8 = 22; // LP매수호가수량8
+    sint64 lp9offerrem9 = 23; // LP매도호가수량9
+    sint64 lp9bidrem9 = 24; // LP매수호가수량9
+    sint64 lp9offerrem10 = 25; // LP매도호가수량10
+    sint64 lp9bidrem10 = 26; // LP매수호가수량10
     sint32 jnilclose = 27; // 전일종가
     sint32 offerho1 = 28; // 매도호가1
     sint32 bidho1 = 29; // 매수호가1
@@ -9069,7 +9069,7 @@ message t1906_t1906OutBlock {
     float yediff = 97; // 예상체결등락율
     sint64 tmoffer = 98; // 시간외매도잔량
     sint64 tmbid = 99; // 시간외매수잔량
-    string ho_status = 100; // 동시구분
+    string ho9status = 100; // 동시구분
     string shcode = 101; // 단축코드
     sint32 uplmtprice = 102; // 상한가
     sint32 dnlmtprice = 103; // 하한가
@@ -9166,11 +9166,11 @@ message t1927_t1927OutBlock1 {
     float diff = 5; // 등락율
     sint64 volume = 6; // 거래량
     sint64 value = 7; // 거래대금
-    sint64 gm_vo = 8; // 공매도수량
-    sint64 gm_va = 9; // 공매도대금
-    float gm_per = 10; // 공매도거래비중
-    sint64 gm_avg = 11; // 평균공매도단가
-    sint64 gm_vo_sum = 12; // 누적공매도수량
+    sint64 gm9vo = 8; // 공매도수량
+    sint64 gm9va = 9; // 공매도대금
+    float gm9per = 10; // 공매도거래비중
+    sint64 gm9avg = 11; // 평균공매도단가
+    sint64 gm9vo9sum = 12; // 누적공매도수량
 }
 
 //t1941 종목별대차거래일간추이(t1941)
@@ -9261,7 +9261,7 @@ message t1950_t1950OutBlock {
     string payday = 58; // 지급일
     string listdate = 59; // 발행일
     string lpmem = 60; // LP회원사
-    float lp_holdvol = 61; // LP보유수량
+    float lp9holdvol = 61; // LP보유수량
     string bcode = 62; // 기초자산코드
     string bgubun = 63; // 기초자산구분
     sint32 bprice = 64; // 기초자산현재가
@@ -9300,11 +9300,11 @@ message t1951_t1951InBlock {
     sint64 cvolume = 2; // 특이거래량
     string starttime = 3; // 시작시간
     string endtime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t1951_t1951OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1951_t1951OutBlock1 {
@@ -9519,7 +9519,7 @@ message t1956_t1956OutBlock {
     string payday = 58; // 지급일
     string listdate = 59; // 발행일
     string lpmem = 60; // LP회원사
-    float lp_holdvol = 61; // LP보유수량
+    float lp9holdvol = 61; // LP보유수량
     string bcode = 62; // 기초자산코드
     string bgubun = 63; // 기초자산구분
     sint32 bprice = 64; // 기초자산현재가
@@ -9648,16 +9648,16 @@ message t1959_t1959OutBlock1 {
     float rate = 6; // 등락율
     string volume = 7; // 누적거래량
     string value = 8; // 누적거래대금
-    string lp_gb = 9; // LP주문가능여부
-    string lp_mem_nm1 = 10; // LP회원사명1
-    string lp_mem_nm2 = 11; // LP회원사명2
-    string lp_mem_nm3 = 12; // LP회원사명3
-    string lp_mem_nm4 = 13; // LP회원사명4
-    string lp_mem_nm5 = 14; // LP회원사명5
-    string lp_min_qty = 15; // LP최소호가수량
-    string lp_st_date = 16; // LP시작일
-    string lp_end_date = 17; // LP종료일
-    float lp_spread = 18; // LP스프레드
+    string lp9gb = 9; // LP주문가능여부
+    string lp9mem9nm1 = 10; // LP회원사명1
+    string lp9mem9nm2 = 11; // LP회원사명2
+    string lp9mem9nm3 = 12; // LP회원사명3
+    string lp9mem9nm4 = 13; // LP회원사명4
+    string lp9mem9nm5 = 14; // LP회원사명5
+    string lp9min9qty = 15; // LP최소호가수량
+    string lp9st9date = 16; // LP시작일
+    string lp9end9date = 17; // LP종료일
+    float lp9spread = 18; // LP스프레드
 }
 
 //t1960 ELW등락율상위(t1960)
@@ -9789,7 +9789,7 @@ message t1964_t1964OutBlock1 {
     sint64 itemvolume = 31; // 기초자산거래량
     sint64 jnilvolume = 32; // 전일거래량
     float theoryprice = 33; // 이론가
-    float lp_rate = 34; // LP보유비율
+    float lp9rate = 34; // LP보유비율
     float impv = 35; // 내재변동성
     float delta = 36; // 델타
     float theta = 37; // 쎄타
@@ -9851,81 +9851,81 @@ message t1971_t1971OutBlock {
     sint32 offerho1 = 8; // 매도호가1
     sint32 bidho1 = 9; // 매수호가1
     sint64 offerrem1 = 10; // 매도호가수량1
-    sint64 lp_offerrem1 = 11; // LP매도호가수량1
+    sint64 lp9offerrem1 = 11; // LP매도호가수량1
     sint64 bidrem1 = 12; // 매수호가수량1
-    sint64 lp_bidrem1 = 13; // LP매수호가수량1
+    sint64 lp9bidrem1 = 13; // LP매수호가수량1
     sint64 preoffercha1 = 14; // 직전매도대비수량1
     sint64 prebidcha1 = 15; // 직전매수대비수량1
     sint32 offerho2 = 16; // 매도호가2
     sint32 bidho2 = 17; // 매수호가2
     sint64 offerrem2 = 18; // 매도호가수량2
-    sint64 lp_offerrem2 = 19; // LP매도호가수량2
+    sint64 lp9offerrem2 = 19; // LP매도호가수량2
     sint64 bidrem2 = 20; // 매수호가수량2
-    sint64 lp_bidrem2 = 21; // LP매수호가수량2
+    sint64 lp9bidrem2 = 21; // LP매수호가수량2
     sint64 preoffercha2 = 22; // 직전매도대비수량2
     sint64 prebidcha2 = 23; // 직전매수대비수량2
     sint32 offerho3 = 24; // 매도호가3
     sint32 bidho3 = 25; // 매수호가3
     sint64 offerrem3 = 26; // 매도호가수량3
-    sint64 lp_offerrem3 = 27; // LP매도호가수량3
+    sint64 lp9offerrem3 = 27; // LP매도호가수량3
     sint64 bidrem3 = 28; // 매수호가수량3
-    sint64 lp_bidrem3 = 29; // LP매수호가수량3
+    sint64 lp9bidrem3 = 29; // LP매수호가수량3
     sint64 preoffercha3 = 30; // 직전매도대비수량3
     sint64 prebidcha3 = 31; // 직전매수대비수량3
     sint32 offerho4 = 32; // 매도호가4
     sint32 bidho4 = 33; // 매수호가4
     sint64 offerrem4 = 34; // 매도호가수량4
-    sint64 lp_offerrem4 = 35; // LP매도호가수량4
+    sint64 lp9offerrem4 = 35; // LP매도호가수량4
     sint64 bidrem4 = 36; // 매수호가수량4
-    sint64 lp_bidrem4 = 37; // LP매수호가수량4
+    sint64 lp9bidrem4 = 37; // LP매수호가수량4
     sint64 preoffercha4 = 38; // 직전매도대비수량4
     sint64 prebidcha4 = 39; // 직전매수대비수량4
     sint32 offerho5 = 40; // 매도호가5
     sint32 bidho5 = 41; // 매수호가5
     sint64 offerrem5 = 42; // 매도호가수량5
-    sint64 lp_offerrem5 = 43; // LP매도호가수량5
+    sint64 lp9offerrem5 = 43; // LP매도호가수량5
     sint64 bidrem5 = 44; // 매수호가수량5
-    sint64 lp_bidrem5 = 45; // LP매수호가수량5
+    sint64 lp9bidrem5 = 45; // LP매수호가수량5
     sint64 preoffercha5 = 46; // 직전매도대비수량5
     sint64 prebidcha5 = 47; // 직전매수대비수량5
     sint32 offerho6 = 48; // 매도호가6
     sint32 bidho6 = 49; // 매수호가6
     sint64 offerrem6 = 50; // 매도호가수량6
-    sint64 lp_offerrem6 = 51; // LP매도호가수량6
+    sint64 lp9offerrem6 = 51; // LP매도호가수량6
     sint64 bidrem6 = 52; // 매수호가수량6
-    sint64 lp_bidrem6 = 53; // LP매수호가수량6
+    sint64 lp9bidrem6 = 53; // LP매수호가수량6
     sint64 preoffercha6 = 54; // 직전매도대비수량6
     sint64 prebidcha6 = 55; // 직전매수대비수량6
     sint32 offerho7 = 56; // 매도호가7
     sint32 bidho7 = 57; // 매수호가7
     sint64 offerrem7 = 58; // 매도호가수량7
-    sint64 lp_offerrem7 = 59; // LP매도호가수량7
+    sint64 lp9offerrem7 = 59; // LP매도호가수량7
     sint64 bidrem7 = 60; // 매수호가수량7
-    sint64 lp_bidrem7 = 61; // LP매수호가수량7
+    sint64 lp9bidrem7 = 61; // LP매수호가수량7
     sint64 preoffercha7 = 62; // 직전매도대비수량7
     sint64 prebidcha7 = 63; // 직전매수대비수량7
     sint32 offerho8 = 64; // 매도호가8
     sint32 bidho8 = 65; // 매수호가8
     sint64 offerrem8 = 66; // 매도호가수량8
-    sint64 lp_offerrem8 = 67; // LP매도호가수량8
+    sint64 lp9offerrem8 = 67; // LP매도호가수량8
     sint64 bidrem8 = 68; // 매수호가수량8
-    sint64 lp_bidrem8 = 69; // LP매수호가수량8
+    sint64 lp9bidrem8 = 69; // LP매수호가수량8
     sint64 preoffercha8 = 70; // 직전매도대비수량8
     sint64 prebidcha8 = 71; // 직전매수대비수량8
     sint32 offerho9 = 72; // 매도호가9
     sint32 bidho9 = 73; // 매수호가9
     sint64 offerrem9 = 74; // 매도호가수량9
-    sint64 lp_offerrem9 = 75; // LP매도호가수량9
+    sint64 lp9offerrem9 = 75; // LP매도호가수량9
     sint64 bidrem9 = 76; // 매수호가수량9
-    sint64 lp_bidrem9 = 77; // LP매수호가수량9
+    sint64 lp9bidrem9 = 77; // LP매수호가수량9
     sint64 preoffercha9 = 78; // 직전매도대비수량9
     sint64 prebidcha9 = 79; // 직전매수대비수량9
     sint32 offerho10 = 80; // 매도호가10
     sint32 bidho10 = 81; // 매수호가10
     sint64 offerrem10 = 82; // 매도호가수량10
-    sint64 lp_offerrem10 = 83; // LP매도호가수량10
+    sint64 lp9offerrem10 = 83; // LP매도호가수량10
     sint64 bidrem10 = 84; // 매수호가수량10
-    sint64 lp_bidrem10 = 85; // LP매수호가수량10
+    sint64 lp9bidrem10 = 85; // LP매수호가수량10
     sint64 preoffercha10 = 86; // 직전매도대비수량10
     sint64 prebidcha10 = 87; // 직전매수대비수량10
     sint64 offer = 88; // 매도호가수량합
@@ -9940,14 +9940,14 @@ message t1971_t1971OutBlock {
     float yediff = 97; // 예상체결등락율
     sint64 tmoffer = 98; // 시간외매도잔량
     sint64 tmbid = 99; // 시간외매수잔량
-    string ho_status = 100; // 동시구분
+    string ho9status = 100; // 동시구분
     sint32 open = 101; // 시가
     sint32 high = 102; // 고가
     sint32 low = 103; // 저가
     string invidx = 104; // ELW권리형태(1:표준2:디지털3:조기종료)
-    float koba_stdprc = 105; // KO베리어
-    float koba_acc_rt = 106; // KO접근도
-    string koba_yn = 107; // KO발생여부(Y/N)
+    float koba9stdprc = 105; // KO베리어
+    float koba9acc9rt = 106; // KO접근도
+    string koba9yn = 107; // KO발생여부(Y/N)
 }
 
 //t1972 ELW현재가(거래원)조회(t1972)
@@ -10010,11 +10010,11 @@ message t1972_t1972OutBlock {
 //t1973 ELW시간대별예상체결조회(t1973)
 message t1973_t1973InBlock {
     string shcode = 1; // 단축코드
-    string cts_time = 2; // 시간CTS
+    string cts9time = 2; // 시간CTS
 }
 
 message t1973_t1973OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t1973_t1973OutBlock1 {
@@ -10051,12 +10051,12 @@ message t1974_t1974OutBlock1 {
 
 //t1981 기초자산리스트조회(t1981)
 message t1981_t1981InBlock {
-    string mkt_gb = 1; // 시장구분(0:전체1:코스피2:코스닥)
+    string mkt9gb = 1; // 시장구분(0:전체1:코스피2:코스닥)
 }
 
 message t1981_t1981OutBlock {
-    string ksp_cnt = 1; // 코스피종목건수
-    string ksd_cnt = 2; // 코스닥종목건수
+    string ksp9cnt = 1; // 코스피종목건수
+    string ksd9cnt = 2; // 코스닥종목건수
 }
 
 message t1981_t1981OutBlock1 {
@@ -10069,7 +10069,7 @@ message t1981_t1981OutBlock1 {
     float rate = 7; // 등락율
     string volume = 8; // 누적거래량(주)
     string value = 9; // 누적거래대금(백만)
-    string mkt_gb = 10; // 시장구분
+    string mkt9gb = 10; // 시장구분
 }
 
 //t2101 선물/옵션현재가(시세)조회(t2101)
@@ -10129,24 +10129,24 @@ message t2101_t2101OutBlock {
     float ibasis = 49; // 이론BASIS
     string gmfutcode = 50; // 근월물종목코드
     float actprice = 51; // 행사가
-    string greeks_time = 52; // 거래소민감도수신시간
-    string greeks_confirm = 53; // 거래소민감도확정여부
+    string greeks9time = 52; // 거래소민감도수신시간
+    string greeks9confirm = 53; // 거래소민감도확정여부
     string danhochk = 54; // 단일가호가여부
     float yeprice = 55; // 예상체결가
     string jnilysign = 56; // 예상체결가전일종가대비구분
     float jnilychange = 57; // 예상체결가전일종가대비
     float jnilydrate = 58; // 예상체결가전일종가등락율
-    string alloc_gubun = 59; // 배분구분(1:배분개시2:배분해제0:미발생)
+    string alloc9gubun = 59; // 배분구분(1:배분개시2:배분해제0:미발생)
     sint32 bjandatecnt = 60; // 잔여일(영업일)
     string focode = 61; // 종목코드
-    string dy_gubun = 62; // 실시간가격제한여부(0:대상아님1:적용중2:미적용중3:일시해제)
-    float dy_uplmtprice = 63; // 실시간상한가
-    float dy_dnlmtprice = 64; // 실시간하한가
-    string updnstep_gubun = 65; // 가격제한폭확대(0:미확대1:확대2:대상아님)
+    string dy9gubun = 62; // 실시간가격제한여부(0:대상아님1:적용중2:미적용중3:일시해제)
+    float dy9uplmtprice = 63; // 실시간상한가
+    float dy9dnlmtprice = 64; // 실시간하한가
+    string updnstep9gubun = 65; // 가격제한폭확대(0:미확대1:확대2:대상아님)
     string upstep = 66; // 상한적용단계
     string dnstep = 67; // 하한적용단계
-    float uplmtprice_3rd = 68; // 3단계상한가
-    float dnlmtprice_3rd = 69; // 3단계하한가
+    float uplmtprice93rd = 68; // 3단계상한가
+    float dnlmtprice93rd = 69; // 3단계하한가
 }
 
 //t2105 선물/옵션현재가호가조회(t2105)
@@ -10230,11 +10230,11 @@ message t2201_t2201InBlock {
     sint64 cvolume = 2; // 특이거래량
     string stime = 3; // 시작시간
     string etime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t2201_t2201OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t2201_t2201OutBlock1 {
@@ -10253,13 +10253,13 @@ message t2201_t2201OutBlock1 {
     float sbasis = 13; // 시장BASIS
     float kasis = 14; // 괴리율
     double value = 15; // 거래대금
-    sint32 j_openupdn = 16; // 미결직전증감
-    double n_msvolume = 17; // 누적매수체결량
-    double n_mdvolume = 18; // 누적매도체결량
-    double s_msvolume = 19; // 누적순매수체결량
-    sint32 n_mschecnt = 20; // 누적매수체결건수
-    sint32 n_mdchecnt = 21; // 누적매도체결건수
-    sint32 s_mschecnt = 22; // 누적순매수체결건수
+    sint32 j9openupdn = 16; // 미결직전증감
+    double n9msvolume = 17; // 누적매수체결량
+    double n9mdvolume = 18; // 누적매도체결량
+    double s9msvolume = 19; // 누적순매수체결량
+    sint32 n9mschecnt = 20; // 누적매수체결건수
+    sint32 n9mdchecnt = 21; // 누적매도체결건수
+    sint32 s9mschecnt = 22; // 누적순매수체결건수
 }
 
 //t2203 기간별주가(t2203)
@@ -10267,14 +10267,14 @@ message t2203_t2203InBlock {
     string shcode = 1; // 단축코드
     string futcheck = 2; // 선물최근월물
     string date = 3; // 날짜
-    string cts_code = 4; // CTS종목코드
+    string cts9code = 4; // CTS종목코드
     string lastdate = 5; // 전종목만기일
     int32 cnt = 6; // 조회요청건수
 }
 
 message t2203_t2203OutBlock {
     string date = 1; // 날짜
-    string cts_code = 2; // CTS종목코드
+    string cts9code = 2; // CTS종목코드
     string lastdate = 3; // 전종목만기일
     string nowfutyn = 4; // 최근월선물여부
 }
@@ -10289,7 +10289,7 @@ message t2203_t2203OutBlock1 {
     float change = 7; // 전일대비
     float diff = 8; // 등락율
     sint64 volume = 9; // 거래량
-    float diff_vol = 10; // 거래증가율
+    float diff9vol = 10; // 거래증가율
     sint32 openyak = 11; // 미결수량
     sint32 openyakupdn = 12; // 미결증감
     float value = 13; // 거래대금
@@ -10316,12 +10316,12 @@ message t2209_t2209OutBlock1 {
     sint32 openyak = 10; // 미결수량
     sint32 openupdn = 11; // 미결증감
     sint32 cvolume = 12; // 체결수량
-    sint32 s_mschecnt = 13; // 매수순간체결건수
-    sint32 s_mdchecnt = 14; // 매도순간체결건수
-    sint32 ss_mschecnt = 15; // 순매수순간체결건수
-    double s_mschevol = 16; // 매수순간체결량
-    double s_mdchevol = 17; // 매도순간체결량
-    double ss_mschevol = 18; // 순매수순간체결량
+    sint32 s9mschecnt = 13; // 매수순간체결건수
+    sint32 s9mdchecnt = 14; // 매도순간체결건수
+    sint32 ss9mschecnt = 15; // 순매수순간체결건수
+    double s9mschevol = 16; // 매수순간체결량
+    double s9mdchevol = 17; // 매도순간체결량
+    double ss9mschevol = 18; // 순매수순간체결량
     float chdegvol = 19; // 체결강도(거래량)
     float chdegcnt = 20; // 체결강도(건수)
 }
@@ -10438,7 +10438,7 @@ message t2405_t2405InBlock {
     string etime = 4; // 종료시간
     string hgubun = 5; // 호가구분
     int32 cnt = 6; // 조회건수
-    string cts_time = 7; // 시간CTS
+    string cts9time = 7; // 시간CTS
 }
 
 message t2405_t2405OutBlock {
@@ -10446,7 +10446,7 @@ message t2405_t2405OutBlock {
     sint32 mdchecnt = 2; // 매도체결건수
     double msvolume = 3; // 매수체결수량
     sint32 mschecnt = 4; // 매수체결건수
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t2405_t2405OutBlock1 {
@@ -10462,13 +10462,13 @@ message t2405_t2405OutBlock1 {
     sint32 bidrem = 10; // 매수수량
     sint32 offercnt = 11; // 매도건수
     sint32 bidcnt = 12; // 매수건수
-    sint32 c_offerrem = 13; // 매도증감수량
-    sint32 c_bidrem = 14; // 매수증감수량
-    sint32 c_offercnt = 15; // 매도증감건수
-    sint32 c_bidcnt = 16; // 매수증감건수
-    float r_bidrem = 17; // 매수수량비율
-    float r_bidcnt = 18; // 매수건수비율
-    string r_sign = 19; // 매수비율구분
+    sint32 c9offerrem = 13; // 매도증감수량
+    sint32 c9bidrem = 14; // 매수증감수량
+    sint32 c9offercnt = 15; // 매도증감건수
+    sint32 c9bidcnt = 16; // 매수증감건수
+    float r9bidrem = 17; // 매수수량비율
+    float r9bidcnt = 18; // 매수건수비율
+    string r9sign = 19; // 매수비율구분
     string date = 20; // 일자
 }
 
@@ -10511,91 +10511,91 @@ message t2541_t2541InBlock {
     string upcode = 3; // 업종코드
     string gubun1 = 4; // 수량구분
     string gubun2 = 5; // 전일분구분
-    string cts_time = 6; // CTSTIME
-    sint32 cts_idx = 7; // CTSIDX
+    string cts9time = 6; // CTSTIME
+    sint32 cts9idx = 7; // CTSIDX
     int32 cnt = 8; // 조회건수
 }
 
 message t2541_t2541OutBlock {
     string eitem = 1; // 상품ID
     string sgubun = 2; // 시장구분
-    string cts_time = 3; // CTSTIME
-    string tjjcode_08 = 4; // 개인투자자코드
-    sint64 ms_08 = 5; // 개인매수
-    sint64 md_08 = 6; // 개인매도
-    sint64 rate_08 = 7; // 개인증감
-    sint64 svolume_08 = 8; // 개인순매수
-    string tjjcode_17 = 9; // 외국인투자자코드
-    sint64 ms_17 = 10; // 외국인매수
-    sint64 md_17 = 11; // 외국인매도
-    sint64 rate_17 = 12; // 외국인증감
-    sint64 svolume_17 = 13; // 외국인순매수
-    string tjjcode_18 = 14; // 기관계투자자코드
-    sint64 ms_18 = 15; // 기관계매수
-    sint64 md_18 = 16; // 기관계매도
-    sint64 rate_18 = 17; // 기관계증감
-    sint64 svolume_18 = 18; // 기관계순매수
-    string tjjcode_01 = 19; // 증권투자자코드
-    sint64 ms_01 = 20; // 증권매수
-    sint64 md_01 = 21; // 증권매도
-    sint64 rate_01 = 22; // 증권증감
-    sint64 svolume_01 = 23; // 증권순매수
-    string tjjcode_03 = 24; // 투신투자자코드
-    sint64 ms_03 = 25; // 투신매수
-    sint64 md_03 = 26; // 투신매도
-    sint64 rate_03 = 27; // 투신증감
-    sint64 svolume_03 = 28; // 투신순매수
-    string tjjcode_04 = 29; // 은행투자자코드
-    sint64 ms_04 = 30; // 은행매수
-    sint64 md_04 = 31; // 은행매도
-    sint64 rate_04 = 32; // 은행증감
-    sint64 svolume_04 = 33; // 은행순매수
-    string tjjcode_02 = 34; // 보험투자자코드
-    sint64 ms_02 = 35; // 보험매수
-    sint64 md_02 = 36; // 보험매도
-    sint64 rate_02 = 37; // 보험증감
-    sint64 svolume_02 = 38; // 보험순매수
-    string tjjcode_05 = 39; // 종금투자자코드
-    sint64 ms_05 = 40; // 종금매수
-    sint64 md_05 = 41; // 종금매도
-    sint64 rate_05 = 42; // 종금증감
-    sint64 svolume_05 = 43; // 종금순매수
-    string tjjcode_06 = 44; // 기금투자자코드
-    sint64 ms_06 = 45; // 기금매수
-    sint64 md_06 = 46; // 기금매도
-    sint64 rate_06 = 47; // 기금증감
-    sint64 svolume_06 = 48; // 기금순매수
-    string tjjcode_07 = 49; // 기타투자자코드
-    sint64 ms_07 = 50; // 기타매수
-    sint64 md_07 = 51; // 기타매도
-    sint64 rate_07 = 52; // 기타증감
-    sint64 svolume_07 = 53; // 기타순매수
-    string tjjcode_11 = 54; // 국가투자자코드
-    sint64 ms_11 = 55; // 국가매수
-    sint64 md_11 = 56; // 국가매도
-    sint64 rate_11 = 57; // 국가증감
-    sint64 svolume_11 = 58; // 국가순매수
-    string tjjcode_00 = 59; // 사모펀드코드
-    sint64 ms_00 = 60; // 사모펀드매수
-    sint64 md_00 = 61; // 사모펀드매도
-    sint64 rate_00 = 62; // 사모펀드증감
-    sint64 svolume_00 = 63; // 사모펀드순매수
+    string cts9time = 3; // CTSTIME
+    string tjjcode908 = 4; // 개인투자자코드
+    sint64 ms908 = 5; // 개인매수
+    sint64 md908 = 6; // 개인매도
+    sint64 rate908 = 7; // 개인증감
+    sint64 svolume908 = 8; // 개인순매수
+    string tjjcode917 = 9; // 외국인투자자코드
+    sint64 ms917 = 10; // 외국인매수
+    sint64 md917 = 11; // 외국인매도
+    sint64 rate917 = 12; // 외국인증감
+    sint64 svolume917 = 13; // 외국인순매수
+    string tjjcode918 = 14; // 기관계투자자코드
+    sint64 ms918 = 15; // 기관계매수
+    sint64 md918 = 16; // 기관계매도
+    sint64 rate918 = 17; // 기관계증감
+    sint64 svolume918 = 18; // 기관계순매수
+    string tjjcode901 = 19; // 증권투자자코드
+    sint64 ms901 = 20; // 증권매수
+    sint64 md901 = 21; // 증권매도
+    sint64 rate901 = 22; // 증권증감
+    sint64 svolume901 = 23; // 증권순매수
+    string tjjcode903 = 24; // 투신투자자코드
+    sint64 ms903 = 25; // 투신매수
+    sint64 md903 = 26; // 투신매도
+    sint64 rate903 = 27; // 투신증감
+    sint64 svolume903 = 28; // 투신순매수
+    string tjjcode904 = 29; // 은행투자자코드
+    sint64 ms904 = 30; // 은행매수
+    sint64 md904 = 31; // 은행매도
+    sint64 rate904 = 32; // 은행증감
+    sint64 svolume904 = 33; // 은행순매수
+    string tjjcode902 = 34; // 보험투자자코드
+    sint64 ms902 = 35; // 보험매수
+    sint64 md902 = 36; // 보험매도
+    sint64 rate902 = 37; // 보험증감
+    sint64 svolume902 = 38; // 보험순매수
+    string tjjcode905 = 39; // 종금투자자코드
+    sint64 ms905 = 40; // 종금매수
+    sint64 md905 = 41; // 종금매도
+    sint64 rate905 = 42; // 종금증감
+    sint64 svolume905 = 43; // 종금순매수
+    string tjjcode906 = 44; // 기금투자자코드
+    sint64 ms906 = 45; // 기금매수
+    sint64 md906 = 46; // 기금매도
+    sint64 rate906 = 47; // 기금증감
+    sint64 svolume906 = 48; // 기금순매수
+    string tjjcode907 = 49; // 기타투자자코드
+    sint64 ms907 = 50; // 기타매수
+    sint64 md907 = 51; // 기타매도
+    sint64 rate907 = 52; // 기타증감
+    sint64 svolume907 = 53; // 기타순매수
+    string tjjcode911 = 54; // 국가투자자코드
+    sint64 ms911 = 55; // 국가매수
+    sint64 md911 = 56; // 국가매도
+    sint64 rate911 = 57; // 국가증감
+    sint64 svolume911 = 58; // 국가순매수
+    string tjjcode900 = 59; // 사모펀드코드
+    sint64 ms900 = 60; // 사모펀드매수
+    sint64 md900 = 61; // 사모펀드매도
+    sint64 rate900 = 62; // 사모펀드증감
+    sint64 svolume900 = 63; // 사모펀드순매수
 }
 
 message t2541_t2541OutBlock1 {
     string time = 1; // 시간
-    sint64 sv_08 = 2; // 개인순매수
-    sint64 sv_17 = 3; // 외국인순매수
-    sint64 sv_18 = 4; // 기관계순매수
-    sint64 sv_01 = 5; // 증권순매수
-    sint64 sv_03 = 6; // 투신순매수
-    sint64 sv_04 = 7; // 은행순매수
-    sint64 sv_02 = 8; // 보험순매수
-    sint64 sv_05 = 9; // 종금순매수
-    sint64 sv_06 = 10; // 기금순매수
-    sint64 sv_07 = 11; // 기타순매수
-    sint64 sv_11 = 12; // 국가순매수
-    sint64 sv_00 = 13; // 사모펀드순매수
+    sint64 sv908 = 2; // 개인순매수
+    sint64 sv917 = 3; // 외국인순매수
+    sint64 sv918 = 4; // 기관계순매수
+    sint64 sv901 = 5; // 증권순매수
+    sint64 sv903 = 6; // 투신순매수
+    sint64 sv904 = 7; // 은행순매수
+    sint64 sv902 = 8; // 보험순매수
+    sint64 sv905 = 9; // 종금순매수
+    sint64 sv906 = 10; // 기금순매수
+    sint64 sv907 = 11; // 기타순매수
+    sint64 sv911 = 12; // 국가순매수
+    sint64 sv900 = 13; // 사모펀드순매수
 }
 
 //t2545 상품선물투자자매매동향(챠트용)
@@ -10766,11 +10766,11 @@ message t2804_t2804InBlock {
     sint64 cvolume = 2; // 특이거래량
     string stime = 3; // 시작시간
     string etime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t2804_t2804OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t2804_t2804OutBlock1 {
@@ -10790,13 +10790,13 @@ message t2804_t2804OutBlock1 {
     float sbasis = 14; // 시장BASIS
     float kasis = 15; // 괴리율
     double value = 16; // 거래대금
-    sint32 j_openupdn = 17; // 미결직전증감
-    double n_msvolume = 18; // 누적매수체결량
-    double n_mdvolume = 19; // 누적매도체결량
-    double s_msvolume = 20; // 누적순매수체결량
-    sint32 n_mschecnt = 21; // 누적매수체결건수
-    sint32 n_mdchecnt = 22; // 누적매도체결건수
-    sint32 s_mschecnt = 23; // 누적순매수체결건수
+    sint32 j9openupdn = 17; // 미결직전증감
+    double n9msvolume = 18; // 누적매수체결량
+    double n9mdvolume = 19; // 누적매도체결량
+    double s9msvolume = 20; // 누적순매수체결량
+    sint32 n9mschecnt = 21; // 누적매수체결건수
+    sint32 n9mdchecnt = 22; // 누적매도체결건수
+    sint32 s9mschecnt = 23; // 누적순매수체결건수
 }
 
 //t2805 CME야간선물기간별주가(t2805)
@@ -10804,14 +10804,14 @@ message t2805_t2805InBlock {
     string shcode = 1; // 단축코드
     string futcheck = 2; // 선물최근월물
     string date = 3; // 날짜
-    string cts_code = 4; // CTS종목코드
+    string cts9code = 4; // CTS종목코드
     string lastdate = 5; // 전종목만기일
     int32 cnt = 6; // 조회요청건수
 }
 
 message t2805_t2805OutBlock {
     string date = 1; // 날짜
-    string cts_code = 2; // CTS종목코드
+    string cts9code = 2; // CTS종목코드
     string lastdate = 3; // 전종목만기일
     string nowfutyn = 4; // 최근월선물여부
 }
@@ -10826,7 +10826,7 @@ message t2805_t2805OutBlock1 {
     float change = 7; // 전일대비
     float diff = 8; // 등락율
     sint64 volume = 9; // 거래량
-    float diff_vol = 10; // 거래증가율
+    float diff9vol = 10; // 거래증가율
     sint32 openyak = 11; // 미결수량
     sint32 openyakupdn = 12; // 미결증감
     float value = 13; // 거래대금
@@ -10836,98 +10836,98 @@ message t2805_t2805OutBlock1 {
 message t2813_t2813InBlock {
     string gubun1 = 1; // 수량구분
     string gubun2 = 2; // 전일분구분
-    string cts_time = 3; // CTSTIME
-    sint32 cts_idx = 4; // CTSIDX
+    string cts9time = 3; // CTSTIME
+    sint32 cts9idx = 4; // CTSIDX
     int32 cnt = 5; // 조회건수
     string gubun3 = 6; // 직전대비구분(C:직전대비)
 }
 
 message t2813_t2813OutBlock {
-    string cts_time = 1; // CTSTIME
-    string tjjcode_08 = 2; // 개인투자자코드
-    sint64 ms_08 = 3; // 개인매수
-    sint64 md_08 = 4; // 개인매도
-    sint64 rate_08 = 5; // 개인증감
-    sint64 svolume_08 = 6; // 개인순매수
-    string tjjcode_17 = 7; // 외국인투자자코드
-    sint64 ms_17 = 8; // 외국인매수
-    sint64 md_17 = 9; // 외국인매도
-    sint64 rate_17 = 10; // 외국인증감
-    sint64 svolume_17 = 11; // 외국인순매수
-    string tjjcode_18 = 12; // 기관계투자자코드
-    sint64 ms_18 = 13; // 기관계매수
-    sint64 md_18 = 14; // 기관계매도
-    sint64 rate_18 = 15; // 기관계증감
-    sint64 svolume_18 = 16; // 기관계순매수
-    string tjjcode_01 = 17; // 증권투자자코드
-    sint64 ms_01 = 18; // 증권매수
-    sint64 md_01 = 19; // 증권매도
-    sint64 rate_01 = 20; // 증권증감
-    sint64 svolume_01 = 21; // 증권순매수
-    string tjjcode_03 = 22; // 투신투자자코드
-    sint64 ms_03 = 23; // 투신매수
-    sint64 md_03 = 24; // 투신매도
-    sint64 rate_03 = 25; // 투신증감
-    sint64 svolume_03 = 26; // 투신순매수
-    string tjjcode_04 = 27; // 은행투자자코드
-    sint64 ms_04 = 28; // 은행매수
-    sint64 md_04 = 29; // 은행매도
-    sint64 rate_04 = 30; // 은행증감
-    sint64 svolume_04 = 31; // 은행순매수
-    string tjjcode_02 = 32; // 보험투자자코드
-    sint64 ms_02 = 33; // 보험매수
-    sint64 md_02 = 34; // 보험매도
-    sint64 rate_02 = 35; // 보험증감
-    sint64 svolume_02 = 36; // 보험순매수
-    string tjjcode_05 = 37; // 종금투자자코드
-    sint64 ms_05 = 38; // 종금매수
-    sint64 md_05 = 39; // 종금매도
-    sint64 rate_05 = 40; // 종금증감
-    sint64 svolume_05 = 41; // 종금순매수
-    string tjjcode_06 = 42; // 기금투자자코드
-    sint64 ms_06 = 43; // 기금매수
-    sint64 md_06 = 44; // 기금매도
-    sint64 rate_06 = 45; // 기금증감
-    sint64 svolume_06 = 46; // 기금순매수
-    string tjjcode_07 = 47; // 기타투자자코드
-    sint64 ms_07 = 48; // 기타매수
-    sint64 md_07 = 49; // 기타매도
-    sint64 rate_07 = 50; // 기타증감
-    sint64 svolume_07 = 51; // 기타순매수
-    string tjjcode_11 = 52; // 국가투자자코드
-    sint64 ms_11 = 53; // 국가매수
-    sint64 md_11 = 54; // 국가매도
-    sint64 rate_11 = 55; // 국가증감
-    sint64 svolume_11 = 56; // 국가순매수
-    string tjjcode_00 = 57; // 사모펀드코드
-    sint64 ms_00 = 58; // 사모펀드매수
-    sint64 md_00 = 59; // 사모펀드매도
-    sint64 rate_00 = 60; // 사모펀드증감
-    sint64 svolume_00 = 61; // 사모펀드순매수
+    string cts9time = 1; // CTSTIME
+    string tjjcode908 = 2; // 개인투자자코드
+    sint64 ms908 = 3; // 개인매수
+    sint64 md908 = 4; // 개인매도
+    sint64 rate908 = 5; // 개인증감
+    sint64 svolume908 = 6; // 개인순매수
+    string tjjcode917 = 7; // 외국인투자자코드
+    sint64 ms917 = 8; // 외국인매수
+    sint64 md917 = 9; // 외국인매도
+    sint64 rate917 = 10; // 외국인증감
+    sint64 svolume917 = 11; // 외국인순매수
+    string tjjcode918 = 12; // 기관계투자자코드
+    sint64 ms918 = 13; // 기관계매수
+    sint64 md918 = 14; // 기관계매도
+    sint64 rate918 = 15; // 기관계증감
+    sint64 svolume918 = 16; // 기관계순매수
+    string tjjcode901 = 17; // 증권투자자코드
+    sint64 ms901 = 18; // 증권매수
+    sint64 md901 = 19; // 증권매도
+    sint64 rate901 = 20; // 증권증감
+    sint64 svolume901 = 21; // 증권순매수
+    string tjjcode903 = 22; // 투신투자자코드
+    sint64 ms903 = 23; // 투신매수
+    sint64 md903 = 24; // 투신매도
+    sint64 rate903 = 25; // 투신증감
+    sint64 svolume903 = 26; // 투신순매수
+    string tjjcode904 = 27; // 은행투자자코드
+    sint64 ms904 = 28; // 은행매수
+    sint64 md904 = 29; // 은행매도
+    sint64 rate904 = 30; // 은행증감
+    sint64 svolume904 = 31; // 은행순매수
+    string tjjcode902 = 32; // 보험투자자코드
+    sint64 ms902 = 33; // 보험매수
+    sint64 md902 = 34; // 보험매도
+    sint64 rate902 = 35; // 보험증감
+    sint64 svolume902 = 36; // 보험순매수
+    string tjjcode905 = 37; // 종금투자자코드
+    sint64 ms905 = 38; // 종금매수
+    sint64 md905 = 39; // 종금매도
+    sint64 rate905 = 40; // 종금증감
+    sint64 svolume905 = 41; // 종금순매수
+    string tjjcode906 = 42; // 기금투자자코드
+    sint64 ms906 = 43; // 기금매수
+    sint64 md906 = 44; // 기금매도
+    sint64 rate906 = 45; // 기금증감
+    sint64 svolume906 = 46; // 기금순매수
+    string tjjcode907 = 47; // 기타투자자코드
+    sint64 ms907 = 48; // 기타매수
+    sint64 md907 = 49; // 기타매도
+    sint64 rate907 = 50; // 기타증감
+    sint64 svolume907 = 51; // 기타순매수
+    string tjjcode911 = 52; // 국가투자자코드
+    sint64 ms911 = 53; // 국가매수
+    sint64 md911 = 54; // 국가매도
+    sint64 rate911 = 55; // 국가증감
+    sint64 svolume911 = 56; // 국가순매수
+    string tjjcode900 = 57; // 사모펀드코드
+    sint64 ms900 = 58; // 사모펀드매수
+    sint64 md900 = 59; // 사모펀드매도
+    sint64 rate900 = 60; // 사모펀드증감
+    sint64 svolume900 = 61; // 사모펀드순매수
 }
 
 message t2813_t2813OutBlock1 {
     string time = 1; // 시간
-    sint64 sv_08 = 2; // 개인순매수
-    sint64 sv_17 = 3; // 외국인순매수
-    sint64 sv_18 = 4; // 기관계순매수
-    sint64 sv_01 = 5; // 증권순매수
-    sint64 sv_03 = 6; // 투신순매수
-    sint64 sv_04 = 7; // 은행순매수
-    sint64 sv_02 = 8; // 보험순매수
-    sint64 sv_05 = 9; // 종금순매수
-    sint64 sv_06 = 10; // 기금순매수
-    sint64 sv_07 = 11; // 기타순매수
-    sint64 sv_11 = 12; // 국가순매수
-    sint64 sv_00 = 13; // 사모펀드순매수
+    sint64 sv908 = 2; // 개인순매수
+    sint64 sv917 = 3; // 외국인순매수
+    sint64 sv918 = 4; // 기관계순매수
+    sint64 sv901 = 5; // 증권순매수
+    sint64 sv903 = 6; // 투신순매수
+    sint64 sv904 = 7; // 은행순매수
+    sint64 sv902 = 8; // 보험순매수
+    sint64 sv905 = 9; // 종금순매수
+    sint64 sv906 = 10; // 기금순매수
+    sint64 sv907 = 11; // 기타순매수
+    sint64 sv911 = 12; // 국가순매수
+    sint64 sv900 = 13; // 사모펀드순매수
 }
 
 //t2814 CME야간선물기간별투자자매매추이(챠트)
 message t2814_t2814InBlock {
     string gubun1 = 1; // 수치구분(1:수치2:누적)
     string gubun2 = 2; // 단위구분(1:일2:주3:월)
-    string from_date = 3; // 시작날짜
-    string to_date = 4; // 종료날짜
+    string from9date = 3; // 시작날짜
+    string to9date = 4; // 종료날짜
 }
 
 message t2814_t2814OutBlock {
@@ -10937,36 +10937,36 @@ message t2814_t2814OutBlock {
 
 message t2814_t2814OutBlock1 {
     string date = 1; // 일자
-    sint64 sv_08 = 2; // 개인수량
-    sint64 sv_17 = 3; // 외인계수량(등록+미등록)
-    sint64 sv_18 = 4; // 기관계수량
-    sint64 sv_01 = 5; // 증권수량
-    sint64 sv_03 = 6; // 투신수량
-    sint64 sv_04 = 7; // 은행수량
-    sint64 sv_02 = 8; // 보험수량
-    sint64 sv_05 = 9; // 종금수량
-    sint64 sv_06 = 10; // 기금수량
-    sint64 sv_07 = 11; // 기타수량
-    sint64 sv_00 = 12; // 사모펀드수량
-    sint64 sv_09 = 13; // 등록외국인수량
-    sint64 sv_10 = 14; // 미등록외국인수량
-    sint64 sv_11 = 15; // 국가수량
-    sint64 sv_99 = 16; // 기타계수량(기타+국가)
-    double sa_08 = 17; // 개인금액
-    double sa_17 = 18; // 외인계금액(등록+미등록)
-    double sa_18 = 19; // 기관계금액
-    double sa_01 = 20; // 증권금액
-    double sa_03 = 21; // 투신금액
-    double sa_04 = 22; // 은행금액
-    double sa_02 = 23; // 보험금액
-    double sa_05 = 24; // 종금금액
-    double sa_06 = 25; // 기금금액
-    double sa_07 = 26; // 기타금액
-    double sa_00 = 27; // 사모펀드금액
-    double sa_09 = 28; // 등록외국인금액
-    double sa_10 = 29; // 미등록외국인금액
-    double sa_11 = 30; // 국가금액
-    double sa_99 = 31; // 기타계금액(기타+국가)
+    sint64 sv908 = 2; // 개인수량
+    sint64 sv917 = 3; // 외인계수량(등록+미등록)
+    sint64 sv918 = 4; // 기관계수량
+    sint64 sv901 = 5; // 증권수량
+    sint64 sv903 = 6; // 투신수량
+    sint64 sv904 = 7; // 은행수량
+    sint64 sv902 = 8; // 보험수량
+    sint64 sv905 = 9; // 종금수량
+    sint64 sv906 = 10; // 기금수량
+    sint64 sv907 = 11; // 기타수량
+    sint64 sv900 = 12; // 사모펀드수량
+    sint64 sv909 = 13; // 등록외국인수량
+    sint64 sv910 = 14; // 미등록외국인수량
+    sint64 sv911 = 15; // 국가수량
+    sint64 sv999 = 16; // 기타계수량(기타+국가)
+    double sa908 = 17; // 개인금액
+    double sa917 = 18; // 외인계금액(등록+미등록)
+    double sa918 = 19; // 기관계금액
+    double sa901 = 20; // 증권금액
+    double sa903 = 21; // 투신금액
+    double sa904 = 22; // 은행금액
+    double sa902 = 23; // 보험금액
+    double sa905 = 24; // 종금금액
+    double sa906 = 25; // 기금금액
+    double sa907 = 26; // 기타금액
+    double sa900 = 27; // 사모펀드금액
+    double sa909 = 28; // 등록외국인금액
+    double sa910 = 29; // 미등록외국인금액
+    double sa911 = 30; // 국가금액
+    double sa999 = 31; // 기타계금액(기타+국가)
     float jisu = 32; // 시장지수
 }
 
@@ -10976,129 +10976,129 @@ message t2816_t2816InBlock {
 }
 
 message t2816_t2816OutBlock1 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 message t2816_t2816OutBlock2 {
-    string tjjcode_08 = 1; // 개인투자자코드
-    sint64 ms_08 = 2; // 개인매수
-    sint64 md_08 = 3; // 개인매도
-    sint64 rate_08 = 4; // 개인증감
-    sint64 svolume_08 = 5; // 개인순매수
-    string tjjcode_17 = 6; // 외국인투자자코드
-    sint64 ms_17 = 7; // 외국인매수
-    sint64 md_17 = 8; // 외국인매도
-    sint64 rate_17 = 9; // 외국인증감
-    sint64 svolume_17 = 10; // 외국인순매수
-    string tjjcode_18 = 11; // 기관계투자자코드
-    sint64 ms_18 = 12; // 기관계매수
-    sint64 md_18 = 13; // 기관계매도
-    sint64 rate_18 = 14; // 기관계증감
-    sint64 svolume_18 = 15; // 기관계순매수
-    string tjjcode_01 = 16; // 증권투자자코드
-    sint64 ms_01 = 17; // 증권매수
-    sint64 md_01 = 18; // 증권매도
-    sint64 rate_01 = 19; // 증권증감
-    sint64 svolume_01 = 20; // 증권순매수
-    string tjjcode_03 = 21; // 투신투자자코드
-    sint64 ms_03 = 22; // 투신매수
-    sint64 md_03 = 23; // 투신매도
-    sint64 rate_03 = 24; // 투신증감
-    sint64 svolume_03 = 25; // 투신순매수
-    string tjjcode_04 = 26; // 은행투자자코드
-    sint64 ms_04 = 27; // 은행매수
-    sint64 md_04 = 28; // 은행매도
-    sint64 rate_04 = 29; // 은행증감
-    sint64 svolume_04 = 30; // 은행순매수
-    string tjjcode_02 = 31; // 보험투자자코드
-    sint64 ms_02 = 32; // 보험매수
-    sint64 md_02 = 33; // 보험매도
-    sint64 rate_02 = 34; // 보험증감
-    sint64 svolume_02 = 35; // 보험순매수
-    string tjjcode_05 = 36; // 종금투자자코드
-    sint64 ms_05 = 37; // 종금매수
-    sint64 md_05 = 38; // 종금매도
-    sint64 rate_05 = 39; // 종금증감
-    sint64 svolume_05 = 40; // 종금순매수
-    string tjjcode_06 = 41; // 기금투자자코드
-    sint64 ms_06 = 42; // 기금매수
-    sint64 md_06 = 43; // 기금매도
-    sint64 rate_06 = 44; // 기금증감
-    sint64 svolume_06 = 45; // 기금순매수
-    string tjjcode_11 = 46; // 국가투자코드
-    sint64 ms_11 = 47; // 국가매수
-    sint64 md_11 = 48; // 국가매도
-    sint64 rate_11 = 49; // 국가증감
-    sint64 svolume_11 = 50; // 국가순매수
-    string tjjcode_07 = 51; // 기타투자자코드
-    sint64 ms_07 = 52; // 기타매수
-    sint64 md_07 = 53; // 기타매도
-    sint64 rate_07 = 54; // 기타증감
-    sint64 svolume_07 = 55; // 기타순매수
-    string tjjcode_00 = 56; // 사모펀드투자자코드
-    sint64 ms_00 = 57; // 사모펀드매수
-    sint64 md_00 = 58; // 사모펀드매도
-    sint64 rate_00 = 59; // 사모펀드증감
-    sint64 svolume_00 = 60; // 사모펀드순매수
+    string tjjcode908 = 1; // 개인투자자코드
+    sint64 ms908 = 2; // 개인매수
+    sint64 md908 = 3; // 개인매도
+    sint64 rate908 = 4; // 개인증감
+    sint64 svolume908 = 5; // 개인순매수
+    string tjjcode917 = 6; // 외국인투자자코드
+    sint64 ms917 = 7; // 외국인매수
+    sint64 md917 = 8; // 외국인매도
+    sint64 rate917 = 9; // 외국인증감
+    sint64 svolume917 = 10; // 외국인순매수
+    string tjjcode918 = 11; // 기관계투자자코드
+    sint64 ms918 = 12; // 기관계매수
+    sint64 md918 = 13; // 기관계매도
+    sint64 rate918 = 14; // 기관계증감
+    sint64 svolume918 = 15; // 기관계순매수
+    string tjjcode901 = 16; // 증권투자자코드
+    sint64 ms901 = 17; // 증권매수
+    sint64 md901 = 18; // 증권매도
+    sint64 rate901 = 19; // 증권증감
+    sint64 svolume901 = 20; // 증권순매수
+    string tjjcode903 = 21; // 투신투자자코드
+    sint64 ms903 = 22; // 투신매수
+    sint64 md903 = 23; // 투신매도
+    sint64 rate903 = 24; // 투신증감
+    sint64 svolume903 = 25; // 투신순매수
+    string tjjcode904 = 26; // 은행투자자코드
+    sint64 ms904 = 27; // 은행매수
+    sint64 md904 = 28; // 은행매도
+    sint64 rate904 = 29; // 은행증감
+    sint64 svolume904 = 30; // 은행순매수
+    string tjjcode902 = 31; // 보험투자자코드
+    sint64 ms902 = 32; // 보험매수
+    sint64 md902 = 33; // 보험매도
+    sint64 rate902 = 34; // 보험증감
+    sint64 svolume902 = 35; // 보험순매수
+    string tjjcode905 = 36; // 종금투자자코드
+    sint64 ms905 = 37; // 종금매수
+    sint64 md905 = 38; // 종금매도
+    sint64 rate905 = 39; // 종금증감
+    sint64 svolume905 = 40; // 종금순매수
+    string tjjcode906 = 41; // 기금투자자코드
+    sint64 ms906 = 42; // 기금매수
+    sint64 md906 = 43; // 기금매도
+    sint64 rate906 = 44; // 기금증감
+    sint64 svolume906 = 45; // 기금순매수
+    string tjjcode911 = 46; // 국가투자코드
+    sint64 ms911 = 47; // 국가매수
+    sint64 md911 = 48; // 국가매도
+    sint64 rate911 = 49; // 국가증감
+    sint64 svolume911 = 50; // 국가순매수
+    string tjjcode907 = 51; // 기타투자자코드
+    sint64 ms907 = 52; // 기타매수
+    sint64 md907 = 53; // 기타매도
+    sint64 rate907 = 54; // 기타증감
+    sint64 svolume907 = 55; // 기타순매수
+    string tjjcode900 = 56; // 사모펀드투자자코드
+    sint64 ms900 = 57; // 사모펀드매수
+    sint64 md900 = 58; // 사모펀드매도
+    sint64 rate900 = 59; // 사모펀드증감
+    sint64 svolume900 = 60; // 사모펀드순매수
 }
 
 //t2830 EUREXKOSPI200옵션선물현재가(시세)조회(t2830)
@@ -11142,8 +11142,8 @@ message t2830_t2830OutBlock {
     string danhochk = 33; // 단일가호가여부
     sint64 jnilvolume = 34; // 전일거래량
     sint64 jnilvalue = 35; // 전일거래대금
-    float uplmtprice_3rd = 36; // 정규장3단계상한가
-    float dnlmtprice_3rd = 37; // 정규장3단계하한가
+    float uplmtprice93rd = 36; // 정규장3단계상한가
+    float dnlmtprice93rd = 37; // 정규장3단계하한가
 }
 
 //t2831 EUREXKOSPI200옵션선물호가조회(t2831)
@@ -11203,11 +11203,11 @@ message t2832_t2832InBlock {
     sint64 cvolume = 2; // 특이거래량
     string stime = 3; // 시작시간
     string etime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t2832_t2832OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t2832_t2832OutBlock1 {
@@ -11220,12 +11220,12 @@ message t2832_t2832OutBlock1 {
     float offerho = 7; // 매도호가
     float bidho = 8; // 매수호가
     double volume = 9; // 거래량
-    double n_msvolume = 10; // 누적매수체결량
-    double n_mdvolume = 11; // 누적매도체결량
-    double s_msvolume = 12; // 누적순매수체결량
-    sint32 n_mschecnt = 13; // 누적매수체결건수
-    sint32 n_mdchecnt = 14; // 누적매도체결건수
-    sint32 s_mschecnt = 15; // 누적순매수체결건수
+    double n9msvolume = 10; // 누적매수체결량
+    double n9mdvolume = 11; // 누적매도체결량
+    double s9msvolume = 12; // 누적순매수체결량
+    sint32 n9mschecnt = 13; // 누적매수체결건수
+    sint32 n9mdchecnt = 14; // 누적매도체결건수
+    sint32 s9mschecnt = 15; // 누적순매수체결건수
 }
 
 //t2833 EUREX야간옵션선물기간별추이(t2833)
@@ -11233,14 +11233,14 @@ message t2833_t2833InBlock {
     string shcode = 1; // 단축코드
     string futcheck = 2; // 선물최근월물
     string date = 3; // 날짜
-    string cts_code = 4; // CTS종목코드
+    string cts9code = 4; // CTS종목코드
     string lastdate = 5; // 전종목만기일
     int32 cnt = 6; // 조회요청건수
 }
 
 message t2833_t2833OutBlock {
     string date = 1; // 날짜
-    string cts_code = 2; // CTS종목코드
+    string cts9code = 2; // CTS종목코드
     string lastdate = 3; // 전종목만기일
     string nowfutyn = 4; // 최근월선물여부
 }
@@ -11255,7 +11255,7 @@ message t2833_t2833OutBlock1 {
     float change = 7; // 전일대비
     float diff = 8; // 등락율
     sint64 volume = 9; // 거래량
-    float diff_vol = 10; // 거래증가율
+    float diff9vol = 10; // 거래증가율
 }
 
 //t2835 EUREX옵션선물시세전광판(t2835)
@@ -11393,11 +11393,11 @@ message t3320_t3320OutBlock1 {
     float sps = 12; // SPS
     float cps = 13; // CPS
     float bps = 14; // BPS
-    float t_per = 15; // T.PER
-    float t_eps = 16; // T.EPS
+    float t9per = 15; // T.PER
+    float t9eps = 16; // T.EPS
     float peg = 17; // PEG
-    float t_peg = 18; // T.PEG
-    string t_gsym = 19; // 최근분기년도
+    float t9peg = 18; // T.PEG
+    string t9gsym = 19; // 최근분기년도
 }
 
 //t3341 재무순위종합(t3341)
@@ -11435,11 +11435,11 @@ message t3401_t3401InBlock {
     string shcode = 1; // 종목코드
     string gubun1 = 2; // 구분
     string tradno = 3; // 회원사코드
-    string cts_date = 4; // IDXDATE
+    string cts9date = 4; // IDXDATE
 }
 
 message t3401_t3401OutBlock {
-    string cts_date = 1; // IDXDATE
+    string cts9date = 1; // IDXDATE
     sint32 price = 2; // 현재가
     string sign = 3; // 대비속성
     sint32 change = 4; // 대비
@@ -11467,13 +11467,13 @@ message t3518_t3518InBlock {
     sint32 cnt = 3; // 입력건수
     string jgbn = 4; // 조회구분
     sint32 nmin = 5; // N분
-    string cts_date = 6; // CTS_DATE
-    string cts_time = 7; // CTS_TIME
+    string cts9date = 6; // CTS_DATE
+    string cts9time = 7; // CTS_TIME
 }
 
 message t3518_t3518OutBlock {
-    string cts_date = 1; // CTS_DATE
-    string cts_time = 2; // CTS_TIME
+    string cts9date = 1; // CTS_DATE
+    string cts9time = 2; // CTS_TIME
 }
 
 message t3518_t3518OutBlock1 {
@@ -11523,9 +11523,9 @@ message t4201_t4201InBlock {
     string tdgb = 5; // 당일구분(0:전체1:당일만)
     string sdate = 6; // 시작일자
     string edate = 7; // 종료일자
-    string cts_date = 8; // 연속일자
-    string cts_time = 9; // 연속시간
-    string cts_daygb = 10; // 연속당일구분(0:연속전체1:연속당일만2:연속전일만)
+    string cts9date = 8; // 연속일자
+    string cts9time = 9; // 연속시간
+    string cts9daygb = 10; // 연속당일구분(0:연속전체1:연속당일만2:연속전일만)
 }
 
 message t4201_t4201OutBlock {
@@ -11541,9 +11541,9 @@ message t4201_t4201OutBlock {
     sint32 diclose = 10; // 당일종가
     sint32 highend = 11; // 상한가
     sint32 lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string cts_time = 14; // 연속시간
-    string cts_daygb = 15; // 연속당일구분
+    string cts9date = 13; // 연속일자
+    string cts9time = 14; // 연속시간
+    string cts9daygb = 15; // 연속당일구분
 }
 
 message t4201_t4201OutBlock1 {
@@ -11553,7 +11553,7 @@ message t4201_t4201OutBlock1 {
     sint32 high = 4; // 고가
     sint32 low = 5; // 저가
     sint32 close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 value = 8; // 거래대금
     sint64 jongchk = 9; // 수정구분
     double rate = 10; // 수정비율
@@ -11570,9 +11570,9 @@ message t4203_t4203InBlock {
     string tdgb = 5; // 당일구분(0:전체1:당일만)
     string sdate = 6; // 시작일자
     string edate = 7; // 종료일자
-    string cts_date = 8; // 연속일자
-    string cts_time = 9; // 연속시간
-    string cts_daygb = 10; // 연속당일구분(0:연속전체1:연속당일만2:연속전일만)
+    string cts9date = 8; // 연속일자
+    string cts9time = 9; // 연속시간
+    string cts9daygb = 10; // 연속당일구분(0:연속전체1:연속당일만2:연속전일만)
 }
 
 message t4203_t4203OutBlock {
@@ -11587,9 +11587,9 @@ message t4203_t4203OutBlock {
     float dilow = 9; // 당일저가
     float diclose = 10; // 당일종가
     sint64 disvalue = 11; // 당일거래대금
-    string cts_date = 12; // 연속일자
-    string cts_time = 13; // 연속시간
-    string cts_daygb = 14; // 연속당일구분
+    string cts9date = 12; // 연속일자
+    string cts9time = 13; // 연속시간
+    string cts9daygb = 14; // 연속당일구분
 }
 
 message t4203_t4203OutBlock1 {
@@ -11599,7 +11599,7 @@ message t4203_t4203OutBlock1 {
     float high = 4; // 고가
     float low = 5; // 저가
     float close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 value = 8; // 거래대금
 }
 
@@ -11779,11 +11779,11 @@ message t8404_t8404InBlock {
     sint64 cvolume = 2; // 특이거래량
     string stime = 3; // 시작시간
     string etime = 4; // 종료시간
-    string cts_time = 5; // 시간CTS
+    string cts9time = 5; // 시간CTS
 }
 
 message t8404_t8404OutBlock {
-    string cts_time = 1; // 시간CTS
+    string cts9time = 1; // 시간CTS
 }
 
 message t8404_t8404OutBlock1 {
@@ -11802,13 +11802,13 @@ message t8404_t8404OutBlock1 {
     sint32 sbasis = 13; // 시장BASIS
     float kasis = 14; // 괴리율
     double value = 15; // 거래대금
-    sint32 j_openupdn = 16; // 미결직전증감
-    double n_msvolume = 17; // 누적매수체결량
-    double n_mdvolume = 18; // 누적매도체결량
-    double s_msvolume = 19; // 누적순매수체결량
-    sint32 n_mschecnt = 20; // 누적매수체결건수
-    sint32 n_mdchecnt = 21; // 누적매도체결건수
-    sint32 s_mschecnt = 22; // 누적순매수체결건수
+    sint32 j9openupdn = 16; // 미결직전증감
+    double n9msvolume = 17; // 누적매수체결량
+    double n9mdvolume = 18; // 누적매도체결량
+    double s9msvolume = 19; // 누적순매수체결량
+    sint32 n9mschecnt = 20; // 누적매수체결건수
+    sint32 n9mdchecnt = 21; // 누적매도체결건수
+    sint32 s9mschecnt = 22; // 누적순매수체결건수
 }
 
 //t8405 주식선물기간별주가(API용)(t8405)
@@ -11816,14 +11816,14 @@ message t8405_t8405InBlock {
     string shcode = 1; // 단축코드
     string futcheck = 2; // 선물최근월물
     string date = 3; // 날짜
-    string cts_code = 4; // CTS종목코드
+    string cts9code = 4; // CTS종목코드
     string lastdate = 5; // 전종목만기일
     int32 cnt = 6; // 조회요청건수
 }
 
 message t8405_t8405OutBlock {
     string date = 1; // 날짜
-    string cts_code = 2; // CTS종목코드
+    string cts9code = 2; // CTS종목코드
     string lastdate = 3; // 전종목만기일
     string nowfutyn = 4; // 최근월선물여부
 }
@@ -11838,7 +11838,7 @@ message t8405_t8405OutBlock1 {
     sint32 change = 7; // 전일대비
     float diff = 8; // 등락율
     sint64 volume = 9; // 거래량
-    float diff_vol = 10; // 거래증가율
+    float diff9vol = 10; // 거래증가율
     sint32 openyak = 11; // 미결수량
     sint32 openyakupdn = 12; // 미결증감
     float value = 13; // 거래대금
@@ -11865,12 +11865,12 @@ message t8406_t8406OutBlock1 {
     sint32 openyak = 10; // 미결수량
     sint32 openupdn = 11; // 미결증감
     sint32 cvolume = 12; // 체결수량
-    sint32 s_mschecnt = 13; // 매수순간체결건수
-    sint32 s_mdchecnt = 14; // 매도순간체결건수
-    sint32 ss_mschecnt = 15; // 순매수순간체결건수
-    double s_mschevol = 16; // 매수순간체결량
-    double s_mdchevol = 17; // 매도순간체결량
-    double ss_mschevol = 18; // 순매수순간체결량
+    sint32 s9mschecnt = 13; // 매수순간체결건수
+    sint32 s9mdchecnt = 14; // 매도순간체결건수
+    sint32 ss9mschecnt = 15; // 순매수순간체결건수
+    double s9mschevol = 16; // 매수순간체결량
+    double s9mdchevol = 17; // 매도순간체결량
+    double ss9mschevol = 18; // 순매수순간체결량
     float chdegvol = 19; // 체결강도(거래량)
     float chdegcnt = 20; // 체결강도(건수)
 }
@@ -11927,12 +11927,12 @@ message t8408_t8408OutBlock1 {
     sint32 openyak = 10; // 미결수량
     sint32 openupdn = 11; // 미결증감
     sint32 cvolume = 12; // 체결수량
-    sint32 s_mschecnt = 13; // 매수순간체결건수
-    sint32 s_mdchecnt = 14; // 매도순간체결건수
-    sint32 ss_mschecnt = 15; // 순매수순간체결건수
-    double s_mschevol = 16; // 매수순간체결량
-    double s_mdchevol = 17; // 매도순간체결량
-    double ss_mschevol = 18; // 순매수순간체결량
+    sint32 s9mschecnt = 13; // 매수순간체결건수
+    sint32 s9mdchecnt = 14; // 매도순간체결건수
+    sint32 ss9mschecnt = 15; // 순매수순간체결건수
+    double s9mschevol = 16; // 매수순간체결량
+    double s9mdchevol = 17; // 매도순간체결량
+    double ss9mschevol = 18; // 순매수순간체결량
     float chdegvol = 19; // 체결강도(거래량)
     float chdegcnt = 20; // 체결강도(건수)
 }
@@ -11979,9 +11979,9 @@ message t8411_t8411InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8411_t8411OutBlock {
@@ -11997,12 +11997,12 @@ message t8411_t8411OutBlock {
     sint32 diclose = 10; // 당일종가
     sint32 highend = 11; // 상한가
     sint32 lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string cts_time = 14; // 연속시간
-    string s_time = 15; // 장시작시간(HHMMSS)
-    string e_time = 16; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string cts9time = 14; // 연속시간
+    string s9time = 15; // 장시작시간(HHMMSS)
+    string e9time = 16; // 장종료시간(HHMMSS)
     string dshmin = 17; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 18; // 레코드카운트
+    sint32 rec9count = 18; // 레코드카운트
 }
 
 message t8411_t8411OutBlock1 {
@@ -12012,7 +12012,7 @@ message t8411_t8411OutBlock1 {
     sint32 high = 4; // 고가
     sint32 low = 5; // 저가
     sint32 close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 jongchk = 8; // 수정구분
     double rate = 9; // 수정비율
     sint64 pricechk = 10; // 수정주가반영항목
@@ -12028,9 +12028,9 @@ message t8412_t8412InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8412_t8412OutBlock {
@@ -12046,12 +12046,12 @@ message t8412_t8412OutBlock {
     sint32 diclose = 10; // 당일종가
     sint32 highend = 11; // 상한가
     sint32 lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string cts_time = 14; // 연속시간
-    string s_time = 15; // 장시작시간(HHMMSS)
-    string e_time = 16; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string cts9time = 14; // 연속시간
+    string s9time = 15; // 장시작시간(HHMMSS)
+    string e9time = 16; // 장종료시간(HHMMSS)
     string dshmin = 17; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 18; // 레코드카운트
+    sint32 rec9count = 18; // 레코드카운트
 }
 
 message t8412_t8412OutBlock1 {
@@ -12061,7 +12061,7 @@ message t8412_t8412OutBlock1 {
     sint32 high = 4; // 고가
     sint32 low = 5; // 저가
     sint32 close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 value = 8; // 거래대금
     sint64 jongchk = 9; // 수정구분
     double rate = 10; // 수정비율
@@ -12075,8 +12075,8 @@ message t8413_t8413InBlock {
     sint32 qrycnt = 3; // 요청건수(최대-압축:2000비압축:500)
     string sdate = 4; // 시작일자
     string edate = 5; // 종료일자
-    string cts_date = 6; // 연속일자
-    string comp_yn = 7; // 압축여부(Y:압축N:비압축)
+    string cts9date = 6; // 연속일자
+    string comp9yn = 7; // 압축여부(Y:압축N:비압축)
 }
 
 message t8413_t8413OutBlock {
@@ -12092,11 +12092,11 @@ message t8413_t8413OutBlock {
     sint32 diclose = 10; // 당일종가
     sint32 highend = 11; // 상한가
     sint32 lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string s_time = 14; // 장시작시간(HHMMSS)
-    string e_time = 15; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string s9time = 14; // 장시작시간(HHMMSS)
+    string e9time = 15; // 장종료시간(HHMMSS)
     string dshmin = 16; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 17; // 레코드카운트
+    sint32 rec9count = 17; // 레코드카운트
 }
 
 message t8413_t8413OutBlock1 {
@@ -12105,7 +12105,7 @@ message t8413_t8413OutBlock1 {
     sint32 high = 3; // 고가
     sint32 low = 4; // 저가
     sint32 close = 5; // 종가
-    sint64 jdiff_vol = 6; // 거래량
+    sint64 jdiff9vol = 6; // 거래량
     sint64 value = 7; // 거래대금
     sint64 jongchk = 8; // 수정구분
     double rate = 9; // 수정비율
@@ -12124,9 +12124,9 @@ message t8414_t8414InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8414_t8414OutBlock {
@@ -12142,12 +12142,12 @@ message t8414_t8414OutBlock {
     float diclose = 10; // 당일종가
     float highend = 11; // 상한가
     float lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string cts_time = 14; // 연속시간
-    string s_time = 15; // 장시작시간(HHMMSS)
-    string e_time = 16; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string cts9time = 14; // 연속시간
+    string s9time = 15; // 장시작시간(HHMMSS)
+    string e9time = 16; // 장종료시간(HHMMSS)
     string dshmin = 17; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 18; // 레코드카운트
+    sint32 rec9count = 18; // 레코드카운트
 }
 
 message t8414_t8414OutBlock1 {
@@ -12157,7 +12157,7 @@ message t8414_t8414OutBlock1 {
     float high = 4; // 고가
     float low = 5; // 저가
     float close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 openyak = 8; // 미결제약정
 }
 
@@ -12171,9 +12171,9 @@ message t8415_t8415InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8415_t8415OutBlock {
@@ -12189,12 +12189,12 @@ message t8415_t8415OutBlock {
     float diclose = 10; // 당일종가
     float highend = 11; // 상한가
     float lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string cts_time = 14; // 연속시간
-    string s_time = 15; // 장시작시간(HHMMSS)
-    string e_time = 16; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string cts9time = 14; // 연속시간
+    string s9time = 15; // 장시작시간(HHMMSS)
+    string e9time = 16; // 장종료시간(HHMMSS)
     string dshmin = 17; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 18; // 레코드카운트
+    sint32 rec9count = 18; // 레코드카운트
 }
 
 message t8415_t8415OutBlock1 {
@@ -12204,7 +12204,7 @@ message t8415_t8415OutBlock1 {
     float high = 4; // 고가
     float low = 5; // 저가
     float close = 6; // 종가
-    sint64 jdiff_vol = 7; // 누적거래량
+    sint64 jdiff9vol = 7; // 누적거래량
     sint64 value = 8; // 거래대금
     sint64 openyak = 9; // 미결제약정
 }
@@ -12216,8 +12216,8 @@ message t8416_t8416InBlock {
     sint32 qrycnt = 3; // 요청건수(최대-압축:2000비압축:500)
     string sdate = 4; // 시작일자
     string edate = 5; // 종료일자
-    string cts_date = 6; // 연속일자
-    string comp_yn = 7; // 압축여부(Y:압축N:비압축)
+    string cts9date = 6; // 연속일자
+    string comp9yn = 7; // 압축여부(Y:압축N:비압축)
 }
 
 message t8416_t8416OutBlock {
@@ -12233,11 +12233,11 @@ message t8416_t8416OutBlock {
     float diclose = 10; // 당일종가
     float highend = 11; // 상한가
     float lowend = 12; // 하한가
-    string cts_date = 13; // 연속일자
-    string s_time = 14; // 장시작시간(HHMMSS)
-    string e_time = 15; // 장종료시간(HHMMSS)
+    string cts9date = 13; // 연속일자
+    string s9time = 14; // 장시작시간(HHMMSS)
+    string e9time = 15; // 장종료시간(HHMMSS)
     string dshmin = 16; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 17; // 레코드카운트
+    sint32 rec9count = 17; // 레코드카운트
 }
 
 message t8416_t8416OutBlock1 {
@@ -12246,7 +12246,7 @@ message t8416_t8416OutBlock1 {
     float high = 3; // 고가
     float low = 4; // 저가
     float close = 5; // 종가
-    sint64 jdiff_vol = 6; // 누적거래량
+    sint64 jdiff9vol = 6; // 누적거래량
     sint64 value = 7; // 거래대금
     sint64 openyak = 8; // 미결제약정
 }
@@ -12261,9 +12261,9 @@ message t8417_t8417InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8417_t8417OutBlock {
@@ -12277,12 +12277,12 @@ message t8417_t8417OutBlock {
     float dihigh = 8; // 당일고가
     float dilow = 9; // 당일저가
     float diclose = 10; // 당일종가
-    string cts_date = 11; // 연속일자
-    string cts_time = 12; // 연속시간
-    string s_time = 13; // 장시작시간(HHMMSS)
-    string e_time = 14; // 장종료시간(HHMMSS)
+    string cts9date = 11; // 연속일자
+    string cts9time = 12; // 연속시간
+    string s9time = 13; // 장시작시간(HHMMSS)
+    string e9time = 14; // 장종료시간(HHMMSS)
     string dshmin = 15; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 16; // 레코드카운트
+    sint32 rec9count = 16; // 레코드카운트
 }
 
 message t8417_t8417OutBlock1 {
@@ -12292,7 +12292,7 @@ message t8417_t8417OutBlock1 {
     float high = 4; // 고가
     float low = 5; // 저가
     float close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
 }
 
 //t8418 업종챠트(N분)(t8418)
@@ -12305,9 +12305,9 @@ message t8418_t8418InBlock {
     string stime = 6; // 시작시간(현재미사용)
     string edate = 7; // 종료일자
     string etime = 8; // 종료시간(현재미사용)
-    string cts_date = 9; // 연속일자
-    string cts_time = 10; // 연속시간
-    string comp_yn = 11; // 압축여부(Y:압축N:비압축)
+    string cts9date = 9; // 연속일자
+    string cts9time = 10; // 연속시간
+    string comp9yn = 11; // 압축여부(Y:압축N:비압축)
 }
 
 message t8418_t8418OutBlock {
@@ -12322,12 +12322,12 @@ message t8418_t8418OutBlock {
     float dilow = 9; // 당일저가
     float diclose = 10; // 당일종가
     sint64 disvalue = 11; // 당일거래대금
-    string cts_date = 12; // 연속일자
-    string cts_time = 13; // 연속시간
-    string s_time = 14; // 업종시작시간(HHMMSS)
-    string e_time = 15; // 업종종료시간(HHMMSS)
+    string cts9date = 12; // 연속일자
+    string cts9time = 13; // 연속시간
+    string s9time = 14; // 업종시작시간(HHMMSS)
+    string e9time = 15; // 업종종료시간(HHMMSS)
     string dshmin = 16; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 17; // 레코드카운트
+    sint32 rec9count = 17; // 레코드카운트
 }
 
 message t8418_t8418OutBlock1 {
@@ -12337,7 +12337,7 @@ message t8418_t8418OutBlock1 {
     float high = 4; // 고가
     float low = 5; // 저가
     float close = 6; // 종가
-    sint64 jdiff_vol = 7; // 거래량
+    sint64 jdiff9vol = 7; // 거래량
     sint64 value = 8; // 거래대금
 }
 
@@ -12348,8 +12348,8 @@ message t8419_t8419InBlock {
     sint32 qrycnt = 3; // 요청건수(최대-압축:2000비압축:500)
     string sdate = 4; // 시작일자
     string edate = 5; // 종료일자
-    string cts_date = 6; // 연속일자
-    string comp_yn = 7; // 압축여부(Y:압축N:비압축)
+    string cts9date = 6; // 연속일자
+    string comp9yn = 7; // 압축여부(Y:압축N:비압축)
 }
 
 message t8419_t8419OutBlock {
@@ -12364,11 +12364,11 @@ message t8419_t8419OutBlock {
     float dilow = 9; // 당일저가
     float diclose = 10; // 당일종가
     sint64 disvalue = 11; // 당일거래대금
-    string cts_date = 12; // 연속일자
-    string s_time = 13; // 업종시작시간
-    string e_time = 14; // 업종종료시간
+    string cts9date = 12; // 연속일자
+    string s9time = 13; // 업종시작시간
+    string e9time = 14; // 업종종료시간
     string dshmin = 15; // 동시호가처리시간(MM:분)
-    sint32 rec_count = 16; // 레코드카운트
+    sint32 rec9count = 16; // 레코드카운트
 }
 
 message t8419_t8419OutBlock1 {
@@ -12377,7 +12377,7 @@ message t8419_t8419OutBlock1 {
     float high = 3; // 고가
     float low = 4; // 저가
     float close = 5; // 종가
-    sint64 jdiff_vol = 6; // 거래량
+    sint64 jdiff9vol = 6; // 거래량
     sint64 value = 7; // 거래대금
 }
 
@@ -12414,14 +12414,14 @@ message t8426_t8426OutBlock {
 
 //t8427 과거데이터시간대별조회(t8427)
 message t8427_t8427InBlock {
-    string fo_gbn = 1; // 선물옵션구분
+    string fo9gbn = 1; // 선물옵션구분
     string yyyy = 2; // 조회년도
     string mm = 3; // 조회월
-    string cp_gbn = 4; // 옵션콜풋구분
+    string cp9gbn = 4; // 옵션콜풋구분
     float actprice = 5; // 옵션행사가
     string focode = 6; // 선물옵션코드
-    string dt_gbn = 7; // 일분구분
-    string min_term = 8; // 분간격
+    string dt9gbn = 7; // 일분구분
+    string min9term = 8; // 분간격
     string date = 9; // 날짜
     string time = 10; // 시간
 }
@@ -12443,7 +12443,7 @@ message t8427_t8427OutBlock1 {
     float change = 8; // 전일대비
     float diff = 9; // 등락율
     sint64 volume = 10; // 거래량
-    float diff_vol = 11; // 거래증가율
+    float diff9vol = 11; // 거래증가율
     sint32 openyak = 12; // 미결수량
     sint32 openyakupdn = 13; // 미결증감
     float value = 14; // 거래대금
@@ -12454,7 +12454,7 @@ message t8428_t8428InBlock {
     string fdate = 1; // from일자
     string tdate = 2; // to일자
     string gubun = 3; // 구분
-    string key_date = 4; // 날짜
+    string key9date = 4; // 날짜
     string upcode = 5; // 업종코드
     int32 cnt = 6; // 조회건수
 }
@@ -12503,12 +12503,12 @@ message t8429_t8429OutBlock1 {
     float low = 7; // 저가
     double volume = 8; // 거래량
     sint32 cvolume = 9; // 체결수량
-    sint32 s_mschecnt = 10; // 매수순간체결건수
-    sint32 s_mdchecnt = 11; // 매도순간체결건수
-    sint32 ss_mschecnt = 12; // 순매수순간체결건수
-    double s_mschevol = 13; // 매수순간체결량
-    double s_mdchevol = 14; // 매도순간체결량
-    double ss_mschevol = 15; // 순매수순간체결량
+    sint32 s9mschecnt = 10; // 매수순간체결건수
+    sint32 s9mdchecnt = 11; // 매도순간체결건수
+    sint32 ss9mschecnt = 12; // 순매수순간체결건수
+    double s9mschevol = 13; // 매수순간체결량
+    double s9mdchevol = 14; // 매도순간체결량
+    double ss9mschevol = 15; // 순매수순간체결량
     float chdegvol = 16; // 체결강도(거래량)
     float chdegcnt = 17; // 체결강도(건수)
 }
@@ -12631,7 +12631,7 @@ message t8436_t8436OutBlock {
     sint32 recprice = 9; // 기준가
     string gubun = 10; // 구분(1:코스피2:코스닥)
     string bu12gubun = 11; // 증권그룹
-    string spac_gubun = 12; // 기업인수목적회사여부(Y/N)
+    string spac9gubun = 12; // 기업인수목적회사여부(Y/N)
     string filler = 13; // filler(미사용)
 }
 
@@ -12721,12 +12721,12 @@ message  VI__InBlock {
 }
 
 message  VI__OutBlock {
-    string vi_gubun = 1; // 구분(0:해제 1:정적발동 2:동적발동 3:정적&동적)
-    sint32 svi_recprice = 2; // 정적VI발동기준가격
-    sint32 dvi_recprice = 3; // 동적VI발동기준가격
-    sint32 vi_trgprice = 4; // VI발동가격
+    string vi9gubun = 1; // 구분(0:해제 1:정적발동 2:동적발동 3:정적&동적)
+    sint32 svi9recprice = 2; // 정적VI발동기준가격
+    sint32 dvi9recprice = 3; // 동적VI발동기준가격
+    sint32 vi9trgprice = 4; // VI발동가격
     string shcode = 5; // 단축코드(KEY)
-    string ref_shcode = 6; // 참조코드
+    string ref9shcode = 6; // 참조코드
     string time = 7; // 시간
 }
 
