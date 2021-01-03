@@ -1822,7 +1822,7 @@ message  CM0_OutBlock {
     string bskno = 72; // 바스켓번호
     string trchno = 73; // 트렌치번호
     string Itemno = 74; // 아이템번호
-    string userId = 75; // 주문자Id
+    string userIdOrder = 75; // 주문자Id
     string opdrtnno = 76; // 운영지시번호
     string rjtcode = 77; // 부적격코드
     sint64 mrccnfqty = 78; // 정정취소확인수량
@@ -1948,7 +1948,7 @@ message  CM1_OutBlock {
     string bskno = 72; // 바스켓번호
     string trchno = 73; // 트렌치번호
     string Itemno = 74; // 아이템번호
-    string userId = 75; // 주문자Id
+    string userIdOrder = 75; // 주문자Id
     string opdrtnno = 76; // 운영지시번호
     string rjtcode = 77; // 부적격코드
     sint64 mrccnfqty = 78; // 정정취소확인수량
@@ -2074,7 +2074,7 @@ message  CM2_OutBlock {
     string bskno = 72; // 바스켓번호
     string trchno = 73; // 트렌치번호
     string Itemno = 74; // 아이템번호
-    string userId = 75; // 주문자Id
+    string userIdOrder = 75; // 주문자Id
     string opdrtnno = 76; // 운영지시번호
     string rjtcode = 77; // 부적격코드
     sint64 mrccnfqty = 78; // 정정취소확인수량
@@ -4684,7 +4684,7 @@ message  O01_OutBlock {
     string bskno = 72; // 바스켓번호
     string trchno = 73; // 트렌치번호
     string Itemno = 74; // 아이템번호
-    string userId = 75; // 주문자Id
+    string userIdOrder = 75; // 주문자Id
     string opdrtnno = 76; // 운영지시번호
     string rjtcode = 77; // 부적격코드
     sint64 mrccnfqty = 78; // 정정취소확인수량
