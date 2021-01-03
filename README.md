@@ -1,6 +1,12 @@
 # protobuf-xing
 protocol buffer definitions for XingAPI system trading
 
+# 구글 프로토콜 버퍼 다운받기
+https://developers.google.com/protocol-buffers/docs/downloads
+
+# 파이썬용 프로토콜 버퍼 설치하기
+conda install protobuf
+
 # 파이썬용 생성하기
 protoc.exe --python_out=.\ xing.proto
 
